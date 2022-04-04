@@ -11,14 +11,42 @@
 </head>
 <body>
     <h1 class="heading">
-        <img class="logo" src="assets/images/toptails-logo.webp" alt="TopTails Koala Logo"> TopTails TwoUp
+        <img class="logo" src="assets/images/toptails-logo-small.webp" alt="TopTails Koala Logo"> TopTails TwoUp
     </h1>
 
-    <section class="game-area"></section>
-    <section class="score-area">
-        <p class="scores">Bet Amount: <span class="bet">1</span></p>
-        <p class="scores">Bank Balance: <span class="bank">0</span></p>
+    <section class="game-area">
+        <h2>Australias Game</h2>
+        <div class="amount-area">
+            <p>Bet Amount: </p>
+            <button class="btn btn--bet btn--add">
+                <i class="fas fa-minus-circle"></i>
+            </button>
+            <span class="operand-bet">1</span>
+            <button class="btn btn--bet btn--add">
+                <i class="fas fa-plus-circle"></i>
+            </button>
+        </div>
+        <div class="bet-area">
+            <button class="btn btn--coin btn--headhead">
+                <i class="fas fa-coins"></i>
+            </button>
+            <button class="btn btn--coin btn--headtail">
+                <i class="fas fa-coins"></i>
+            </button>
+            <button class="btn btn--coin btn--tailtail">
+                <i class="fas fa-coins"></i>
+            </button>
+        </div>
     </section>
+    <section class="score-area">
+        <p class="scores">Bet Amount: <span class="operand-bet">1</span>
+            <i class="fas fa-dice"></i>
+        </p>
+        <p class="scores">Bank Balance: <span class="operand-bank">0</span>
+            <i class="fas fa-piggy-bank"></i>
+        </p>
+    </section>
+    <button class="btn btn--green">Spin</button>
     <!-- Js and font-awesome icons -->
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/c2dc8de795.js" crossorigin="anonymous"></script>
