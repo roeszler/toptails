@@ -10,43 +10,49 @@
     <title>TopTails TwoUp</title>
 </head>
 <body>
-    <h1 class="heading">
-        <img class="logo" src="assets/images/toptails-logo-small.webp" alt="TopTails Koala Logo"> TopTails TwoUp
-    </h1>
+    <h1 class="heading">TopTails TwoUp</h1>
+    <img class="logo" src="assets/images/toptails-logo-small.webp" alt="TopTails Koala Logo">
 
     <section class="game-area">
-        <h2>Australias Game</h2>
+        <h2>First to 500 Points</h2>
+
+        <!-- Wager amounts area -->
         <div class="amount-area">
             <p>Bet Amount: </p>
-            <button class="btn btn--bet btn--add">
+            <button data-type="decrease bet" class="btn btn--bet btn--minus">
                 <i class="fas fa-minus-circle"></i>
             </button>
             <span class="operand-bet">1</span>
-            <button class="btn btn--bet btn--add">
+            <button data-type="increase bet" class="btn btn--bet btn--add">
                 <i class="fas fa-plus-circle"></i>
             </button>
         </div>
+
+        <!-- Choice of bet area -->
         <div class="bet-area">
-            <button class="btn btn--coin btn--headhead">
+            <button data-type="HH" class="btn btn--coin btn--headhead">
                 <i class="fas fa-coins"></i>
             </button>
-            <button class="btn btn--coin btn--headtail">
+            <button data-type="HT" class="btn btn--coin btn--headtail">
                 <i class="fas fa-coins"></i>
             </button>
-            <button class="btn btn--coin btn--tailtail">
+            <button data-type="TT" class="btn btn--coin btn--tailtail">
                 <i class="fas fa-coins"></i>
             </button>
         </div>
+        <button data-type="spin" class="btn btn--spin">Spin</button>
     </section>
+
+    <!-- Bet history and Banking section -->
     <section class="score-area">
-        <p class="scores">Bet Amount: <span class="operand-bet">1</span>
-            <i class="fas fa-dice"></i>
-        </p>
-        <p class="scores">Bank Balance: <span class="operand-bank">0</span>
-            <i class="fas fa-piggy-bank"></i>
-        </p>
+        <p class="scores">Kev Koala's Score: <i class="fas fa-cash-register"></i> <span class="operand-comp">0</span> / 500</p>
+        <p class="scores">Player Score: <i class="fas fa-piggy-bank"></i> <span class="operand-player">10</span> / 500</p>
     </section>
-    <button class="btn btn--green">Spin</button>
+    <footer>
+        <a href="https://en.wikipedia.org/wiki/Two-up" target="_blank" aria-label="Link to Wikipedia all about TwoUp">Gameplay</a>
+        | <a href="https://en.wikipedia.org/wiki/Two-up" target="_blank" aria-label="Link to Wikipedia all about TwoUp">History</a>
+        | <a href="https://en.wikipedia.org/wiki/Australia_Day" target="_blank" aria-label="Link to Wikipedia all about Australia Day">Australia Day</a> | <a href="https://en.wikipedia.org/wiki/Anzac_Day" target="_blank" aria-label="Link to Wikipedia all about ANZAC Day">ANZAC Spirit</a>
+    </footer>
     <!-- Js and font-awesome icons -->
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/c2dc8de795.js" crossorigin="anonymous"></script>
