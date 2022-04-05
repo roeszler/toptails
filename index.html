@@ -30,17 +30,17 @@
 
         <!-- Choice of bet area -->
         <div class="bet-area">
-            <button data-type="HH" class="btn btn--coin btn--headhead">
+            <button data-type="HH" class="btn btn--coin btn--headhead" onfocus="changeSpinActive()">
                 <i class="fas fa-coins"></i>
             </button>
-            <button data-type="HT" class="btn btn--coin btn--headtail">
+            <button data-type="HT" class="btn btn--coin btn--headtail" onfocus="changeSpinActive()">
                 <i class="fas fa-coins"></i>
             </button>
-            <button data-type="TT" class="btn btn--coin btn--tailtail">
+            <button data-type="TT" class="btn btn--coin btn--tailtail" onfocus="changeSpinActive()">
                 <i class="fas fa-coins"></i>
             </button>
         </div>
-        <button data-type="spin" class="btn btn--spin">Spin</button>
+        <button id="spin" data-type="spin" class="btn btn--spin" onclick="resetSpin()">Spin</button>
     </section>
 
     <!-- Bet history and Banking section -->
@@ -49,9 +49,8 @@
         <p class="scores">Player Score: <i class="fas fa-piggy-bank"></i> <span class="operand-player">10</span> / 500</p>
     </section>
     <footer>
-        <!-- <a onclick="alertGameplay()" target="_blank" aria-label="Link to Wikipedia all about TwoUp" data-type="gameplay">Gameplay</a> -->
-        <button data-type="gameplay">Gameplay</button> | <a href="https://en.wikipedia.org/wiki/Two-up" target="_blank" aria-label="Link to Wikipedia all about TwoUp">History</a>
-        | <a href="https://en.wikipedia.org/wiki/Australia_Day" target="_blank" aria-label="Link to Wikipedia all about Australia Day">Australia Day</a> | <a href="https://en.wikipedia.org/wiki/Anzac_Day" target="_blank" aria-label="Link to Wikipedia all about ANZAC Day">ANZAC Spirit</a>
+        <button data-type="gameplay">Gameplay</button>| <a href="https://en.wikipedia.org/wiki/Two-up" target="_blank" aria-label="Link to Wikipedia all about TwoUp"> History</a>
+        | <a href="https://en.wikipedia.org/wiki/Australia_Day" target="_blank" aria-label="Link to Wikipedia all about Australia Day"> Australia Day</a> | <a href="https://en.wikipedia.org/wiki/Anzac_Day" target="_blank" aria-label="Link to Wikipedia all about ANZAC Day"> ANZAC Spirit</a>
     </footer>
     <!-- Js and font-awesome icons -->
     <script src="assets/js/script.js"></script>
