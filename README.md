@@ -1,8 +1,12 @@
-# TopTails TwoUp Game
+# Toptails TwoUp
+### HTML, CSS and JavaScript Essentials - Portfolio Project 2
+Site link : https://8000-roeszler-toptails-cwvd6josnkq.ws-eu39b.gitpod.io/
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
+## 1. Purpose of the Project
 
-For example, Love Maths is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also maths. Love Maths is a fully responsive JavaScript maths game that will allow users to add, subtract, multiply and divide numbers. 
+TopTails TwoUp (or TopTails for short) is a site that hopes to convey a variation of the iconic and traditional Australian gambling game 'Two-up' and the rich history that it surrounds. As a game of chance, TopTails will allow users to betting on the outcome of two pennies 'virtually thrown' in the air. Typically played in conjunction with the national remeberance of the ANZAC spirit, it also represents a period of time Australia first displayed itself as distinctly separate nation on the global stage. 
+
+TwoTails is aimed to demonstrate pure JavaScript (vanilla JavaScript) working in a real-world situation. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. TopTails is a fully responsive JavaScript game of chance that will allow users to bet, bank, choose and chance their luck at winning against a virtual opponent (Kev the Koala).  
 
 ![Responsice Mockup](media/love_maths_mockup.png)
 
