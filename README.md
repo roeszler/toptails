@@ -1,16 +1,44 @@
-# Toptails TwoUp
+# TopTails TwoUp
 ### HTML, CSS and JavaScript Essentials - Portfolio Project 2
-Site link : https://8000-roeszler-toptails-cwvd6josnkq.ws-eu39b.gitpod.io/
+Site link : https://roeszler.github.io/toptails/
 
-## 1. Purpose of the Project
+
+## Table of Contents
+
+1. [Project Purpose](#1.-Project-Purpose)
+2. [User Experience Design](#User-Experience-Design)
+    * [User Stories](#User-Stories)
+        * [First Time Visitor Goals](#First-Time-Visitor-Goals)
+        * [Returning Visitor Goals](#Returning-Visitor-Goals)
+    * [Design](#Design)
+        * [Imagery](#Imagery)
+        * [Fonts](#Fonts)
+        * [Color Scheme](#Color-Scheme)
+3. [Features](#Features)
+    * [Existing Features](#Existing-Features)
+        * [Splash Screen](#Splash-Screen)
+        * [Choice Area](#Choice-Area)
+        * [Chosen Area](#Chosen-Area)
+        * [Score Area](#Score-Area)
+        * [Restart Area](#Restart-Area)
+        * [Social Media Area](#Social-Media-Area)
+    * [Features Left To Implement](#Features-Left-To-Implement)
+4. [Technologies](#Technologies)
+5. [Testing](#Testing)
+    * [Validator Testing](#Validator-Testing)
+    * [Issues And Resolutions](#Issues-And-Resolutions)
+6. [Deployment](#Deployment)
+7. [Credits](#Credits)
+## 1. Project Purpose
 
 TopTails TwoUp (or TopTails for short) is a site that hopes to convey a variation of the iconic and traditional Australian gambling game 'Two-up' and the rich history that it surrounds. As a game of chance, TopTails will allow users to betting on the outcome of two pennies 'virtually thrown' in the air. Typically played in conjunction with the national remeberance of the ANZAC spirit, it also represents a period of time Australia first displayed itself as distinctly separate nation on the global stage. 
 
-TwoTails is aimed to demonstrate pure JavaScript (vanilla JavaScript) working in a real-world situation. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. TopTails is a fully responsive JavaScript game of chance that will allow users to bet, bank, choose and chance their luck at winning against a virtual opponent (Kev the Koala).  
+TwoTails is aimed to demonstrate pure JavaScript (vanilla JavaScript) working in a real-world situation. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. TopTails is a fully responsive game that allows users to bet, choose and chance their luck at winning against a virtual opponent: Kev the Koala.  
 
 ![Responsice Mockup](media/love_maths_mockup.png)
 
-## Features 
+## 2. User Experience Design
+## 3. Features 
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
@@ -50,7 +78,8 @@ In addition, you may also use this section to discuss plans for additional featu
 
 - Another feature idea
 
-## Testing 
+## 4. Technologies
+## 5. Testing 
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
@@ -79,7 +108,7 @@ If this section grows too long, you may want to split it off into a separate fil
 
 You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
 
-## Deployment
+## 6. Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
@@ -91,7 +120,7 @@ This section should describe the process you went through to deploy the project 
 The live link can be found here - https://code-institute-org.github.io/love-maths/
 
 
-## Credits 
+## 7. Credits 
 
 In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 
