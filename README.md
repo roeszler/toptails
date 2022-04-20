@@ -92,7 +92,7 @@ Typography selection process :
 
 
 Evaluation based on contrast, easy of reading, and shapes that compliment the Australian nature, the singular font style [Montserrat](https://fonts.google.com/specimen/Montserrat) was selected as the font most suitable. 
-    
+
 #### Color Scheme
 
 Based on providing visual depth and variety of events to the game user, the following color pallette has been chosen surrounding the green seen in the [Austalain national colors](https://en.wikipedia.org/wiki/National_colours_of_Australia), bright yellow and flag blue: 
@@ -154,14 +154,17 @@ In this section, you should go over the different parts of your project, and des
 ![Bet Amount Area](assets/images/betAmountArea.webp)
   * This section is the first point of user interaction.
   * Allows user to increment / decrement the bet amount that simultaneously decreases / icreases the bank area seen as 'Your Bank'.
+  * Creates a sense of risk vs reward that is vital for making chance games fun and even compelling.
   * It has been created as an `<input type="number">` tag without the usual increase/decrease arrows that associate with this input. 
-    * Altho not conventional, the use of this has permitted
+    * Althogh not conventional, the use of the 'unstyled' input button has permitted :
       * Logging of amounts to console, 
       * Direct user input (if so desired),
       * Event listener on the DOMContentLoaded event that fundamentally controls the game, 
-      * Simultaneous decreasing of a similar `<input>` tag the Bank Area,
+      * Simultaneous decreasing of a similar `<input>` tag the Bank Area; 
+      
       ![Bank Area](assets/images/bankArea.webp)
-      * Base factor to calculate win / loss amounts
+
+      * Used as a base to calculate win / loss amounts should user selection equal the combination spun.
 
   * The ability for the user to choose the wadger attends to user stories:
     > As a returning user, I wan't to try to beat the computersied opponent (Kev the Koala) to 500 points without breaking the bank.
@@ -171,22 +174,75 @@ In this section, you should go over the different parts of your project, and des
     > As a fellow code writing user, I wan't to see how the java script has been written and operates.
 
 #### Bet Type Area
-* Inactive State :
+This area is where the user indicates their choice as to wich they wish to bet the amount to be wadgered against. Three buttons indicating a choice of HH (Head Head), HT (Head Tails) or TT (Tail Tail) will be spun.
+
+Each button has three states:
+
+1. The Inactive State :
 
 ![Bet Type Area Inactive](assets/images/betTypeInactive.webp)
+  * This is the intial state of the buttons, where each option is inactive.
+  * In this state the spin button is in a disabled state and the game cannot continue until an option is selected.
+  * Interaction can occur with mouse hover or click.
 
-* Hover State with `title=""` tag in html to allow information on hover :
+2. The Hover State :
 
 ![Bet Type Area Hover](assets/images/betTypeHover.webp)
 
-* Active State that `enables` the spin button :
+* This is the first interactive state of the buttons.
+* The user performing a 'mouse over' action each option will enlarge and change color, indicating interactivity and intuitively prompting the user to do something.
+* Each button has an embedded `title=" "` tag within the html allowing information to be rendered on the mouse hover interaction.
+
+3. The Active State
 
 ![Bet Type Area](assets/images/betTypeActive.webp)
 
+* This follws an 'on mouse click' user interaction.
+* The user action enlarges the button, changes the color of the text and background and internal icon from two coin stacks to a double check symbol, subtley rewarding the user for their interaction.
+* The state remains active until the user either clicks on another bet choice button or the overall game is ended / won.
+  * This remain active state has been coded to allow improved user interaction and automation, promting game flow when repeating the spin function.
+* An active status also `enables` the spin button to change from a disabled state to a 'clickable' enabled state, promoting the game to continue.
+
 #### Spin Button
+A close look at the game area from the words 'Bet Amount' to the 'Spin' button, you will see a gradual increase in the font size, boldness and bright coloring. This 'pyramidal styling' has been deliberate, with the intention to draw the eye and lead the user intuitively to the object of the game... to spin the button.
+
+![The Spin Pyramid](assets/images/spinPyramid.webp)
+
+* As mentioned above, the spin button is enabled only when a bet choice has been made
+* The spin button enabled state is bright, exellent contrast and in recognisably Australian colors.
+* The button width takes up 50% of the desktop / tablet area to 95% width on mobile devices.
+* The position at the lower 3/4 sectiom of the screen is intended to promote ease pf gameplay, particularly on mobile devices with thumb interation.
+
 #### Score & Bank Balance Area
+![The Spin Pyramid](assets/images/scoreBankArea.webp)
+
+* The values in this area change with user bet amount interaction, game wins and losses.
+* The colors chosen (red for Kev, green for the User) are to further promote a sense of what the user want's to occur (an increase in green) and avoid what they don't want to occur (an increase in red).
+* The icon imagery has been selected to further conveys meaning of what each score relates; cash register for computer taking the points and a piggy bank for the user banking the points.
+* Text format selected to convey a sense of accounting and/or recording of official numerical data.
+* The layout of this area also provides a quick reference and reinforcement to the objectiveof the game; get to 500 points before Kev teh Koala does!
+
 #### Footer
+![Footer](assets/images/footer.webp)
+
 #### PopUps
+As discussed in the [game area](#game-area) section, As an alternative to using `alert()` functions which can be blocked by some browsers and mobile devices, I have coded functions to simultaneously remove and display sections to convey major game events. 
+
+These functions although termed as a 'popup' accorss the site, appear in a similar way, they however function more as a change of state in the HTML styling / visibility. This has been done as a way to not-be-limited by potential browser settings that block traditional popups.
+
+There are a total of ten (10) of these change of state 'popups' across the site: 
+* Gameplay
+* Winner 
+* Looser 
+* Game Over 
+* Game Win Final
+* Out of money 
+* Coin animations
+  * Head Head
+  * Head Tail
+  * Tail Tail
+* Error Event
+
 #### Choice
 ###
 
@@ -222,7 +278,13 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 
-- Another feature idea
+* Resollve the larger `eventListeners` + `if` / `else` functions into `switch()` / `case` functions.
+* Increase difficulty / interaction levels
+* Refinement of game odds
+* Lends itself to further refinement and devlopment into a live version.
+  * Possibly a purchasable credits system,
+  * Connection to and from live financial accounts,
+  * Change the game end upper limit to a cash-out scenario.
 
 ## 4. Technologies
 ## 5. Testing 
