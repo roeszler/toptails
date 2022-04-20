@@ -5,8 +5,8 @@ Site link : https://roeszler.github.io/toptails/
 
 ## Table of Contents
 
-1. [Project Purpose](#1.-Project-Purpose)
-2. [User Experience Design](#User-Experience-Design)
+1. [Project Purpose](#1-project-purpose)
+2. [User Experience Design](#2-user-experience-design)
     * [User Stories](#User-Stories)
         * [First Time Visitor Goals](#First-Time-Visitor-Goals)
         * [Returning Visitor Goals](#Returning-Visitor-Goals)
@@ -14,21 +14,23 @@ Site link : https://roeszler.github.io/toptails/
         * [Imagery](#Imagery)
         * [Fonts](#Fonts)
         * [Color Scheme](#Color-Scheme)
-3. [Features](#Features)
-    * [Existing Features](#Existing-Features)
-        * [Splash Screen](#Splash-Screen)
-        * [Choice Area](#Choice-Area)
-        * [Chosen Area](#Chosen-Area)
-        * [Score Area](#Score-Area)
-        * [Restart Area](#Restart-Area)
-        * [Social Media Area](#Social-Media-Area)
-    * [Features Left To Implement](#Features-Left-To-Implement)
-4. [Technologies](#Technologies)
-5. [Testing](#Testing)
-    * [Validator Testing](#Validator-Testing)
+3. [Features](#3-features)
+    * [Existing Features](#existing-features)
+        * [Splash Screen (Gameplay & Rules)](#Splash-Screen)
+        * [Bet Amount Area](#Choice-Area)
+        * [Bet Type Area](#Chosen-Area)
+        * [Spin Button](#Score-Area)
+        * [Score Area](#Restart-Area)
+        * [Footer](#Social-Media-Area)
+    * [Features Left To Implement](#features-left-to-implement)
+4. [Technologies](#4-technologies)
+5. [Testing](#5-testing)
+    * [Validator Testing](#validator-testing)
     * [Issues And Resolutions](#Issues-And-Resolutions)
-6. [Deployment](#Deployment)
-7. [Credits](#Credits)
+6. [Deployment](#6-deployment)
+7. [Credits](#7-credits)
+    * [Content](#content)
+    * [Media](#media)
 ## 1. Project Purpose
 
 TopTails TwoUp (or TopTails for short) is a site that hopes to convey a variation of the iconic and traditional Australian gambling game 'Two-up' and the rich history that it surrounds. As a game of chance, TopTails will allow users to betting on the outcome of two pennies 'virtually thrown' in the air. Typically played in conjunction with the national remeberance of the ANZAC spirit, it also represents a period of time Australia first displayed itself as distinctly separate nation on the global stage. 
@@ -38,11 +40,28 @@ TwoTails is aimed to demonstrate pure JavaScript (vanilla JavaScript) working in
 ![Responsice Mockup](media/love_maths_mockup.png)
 
 ## 2. User Experience Design
+
+### User Stories
+#### First Time Visitors
+#### Returning Visitors
+
+### Design
+#### Imagery
+#### Fonts
+#### Color Scheme
 ## 3. Features 
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 ### Existing Features
+#### Splash Screen & Rules
+  * test 
+#### Bet Amount Choice Area
+#### Bet Type Choice Area
+#### Spin Button
+#### Score & Bank Balance Area
+#### Footer
+###
 
 - __The Love Maths Logo and Heading__
 
@@ -104,7 +123,7 @@ If this section grows too long, you may want to split it off into a separate fil
       - Largest function has 10 statements in it, while the median is 3.
       - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
 
-### Unfixed Bugs
+### Issues & Resolutions
 
 You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
 
