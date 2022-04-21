@@ -472,6 +472,33 @@ footer > button:hover {
 }
 
 /* ------ HH & TT Left Coin Spin STYLING */
+.leftCoinFront {
+    position: absolute;
+    width: auto;
+    height: auto;
+    
+    animation-name: leftCoinSpinFront;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.leftCoinBack {
+    animation-name: leftCoinSpinBack;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
 
 /* ------ HH & TT Right Coin Spin STYLING */
 
