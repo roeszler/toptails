@@ -13,8 +13,45 @@ let ttCoinEnd = document.getElementsByClassName('leftCoinFront')[1];
 
 // ------ Functions
 // ------ Game Engine Functions
+/**
+* Generates the spin result as a random number between 1 and 3
+*/
+function generateSpinResult() {
+
+    let randomNumber = Math.floor(Math.random() * 3) + 1;
+
+    if (randomNumber === 1) {
+        let spinResult = document.getElementById('spinResult').value = 1;
+        document.getElementById('hhSpin').style.display = 'block';
+        document.getElementById('game-area').style.display = 'none';
+        document.getElementById('gameplayPopup').style.display = 'none';
+        console.log(spinResult);
+        return spinResult;
+    } 
+    
+    else if (randomNumber === 2) {
+        let spinResult = document.getElementById('spinResult').value = 2;
+        document.getElementById('htSpin').style.display = 'block';
+        document.getElementById('game-area').style.display = 'none';
+        document.getElementById('gameplayPopup').style.display = 'none';
+        console.log(spinResult);
+        return spinResult;
+    }
+    else {
+        let spinResult = document.getElementById('spinResult').value = 3;
+        document.getElementById('ttSpin').style.display = 'block';
+        document.getElementById('game-area').style.display = 'none';
+        document.getElementById('gameplayPopup').style.display = 'none';
+        console.log(spinResult);
+        return spinResult;
+    }
+}
 
 
+
+
+
+// ------ Bank and Bet zero event 
 /**
 * condition for a game over event
 */
@@ -29,6 +66,15 @@ function compareBankBet() {
     }
  }
 
+// ------ Reset Spin Button 
+/**
+* Resets the color of the spin button after 'click' event
+*/
+function resetSpin() {
+   let resetSpin = document.getElementById('spin');
+   resetSpin.style.backgroundColor = '#3B3B3F33';
+   resetSpin.style.color = '#fff';
+}
 
 // ------ Modal Displays to indicate user initiated events
 // ------ Player Wins Modal 
@@ -158,15 +204,6 @@ function gameplayRender() {
     document.getElementById('gameplayPopup').style.display = 'none';
     document.getElementById('game-area').style.display = 'block';
  }
-
- /**
-* Resets the color of the spin button after 'click' event
-*/
-function resetSpin() {
-   let resetSpin = document.getElementById('spin');
-   resetSpin.style.backgroundColor = '#3B3B3F33';
-   resetSpin.style.color = '#fff';
-}
 
 // ------ Error function
 /** 
