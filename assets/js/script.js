@@ -11,7 +11,17 @@ let hhCoinEnd = document.getElementsByClassName('leftCoinFront')[0];
 let htCoinEnd = document.getElementsByClassName('leftCoinFrontHT')[0];
 let ttCoinEnd = document.getElementsByClassName('leftCoinFront')[1];
 
-// ------ Functions
+// ------------ Functions
+// ------ Game Control Functions
+/**
+* decreases the bank amount.
+*/
+function decrementBank() {
+   let bankAfter = document.getElementById('bank').value = --bank;
+   
+   parseInt(bankAfter);
+}
+
 // ------ Game Engine Functions
 /**
 * Generates the spin result as a random number between 1 and 3
