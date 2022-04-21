@@ -329,6 +329,24 @@ footer > button:hover {
 }
 
 /* ------ Game Over Modal */
+#gameOverPopup {
+    display: none;
+    border: silver;
+    background: #FF0000;
+    border-width: 0.25em;
+    border-style: groove;
+}
+
+#gameOverPopup h2 {
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+#gameOverPopup i {
+    padding: 2rem 1rem 0;
+    color: #ff0;
+}
 
 /* ------ Game Win Final Modal */
 
