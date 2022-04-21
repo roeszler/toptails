@@ -266,15 +266,6 @@ function incrementWinPoints2() {
    document.getElementById('winPoints').value = increment;
 }
 
-
-
-
-
-
-
-
-
-
 /**
 * condition for a game over event bank + bet = 0
 */
@@ -462,11 +453,72 @@ function errorOk () {
 }
 
 // ------ DOM Listeners
-// ------ Window: DOMContentLoaded events
+// ------ Window: DOMContentLoaded Event Listeners
 
 window.addEventListener('load', (event) => {
   console.log('page is fully loaded');
 });
 
-// ------ Document: DOMContentLoaded events
+// ------ Document: DOMContentLoaded Event Listeners
 
+/**
+* DOM button controls and user choices
+*/
+document.addEventListener('DOMContentLoaded', function() {
+   let buttons = document.getElementsByTagName('button');
+
+   for (let button of buttons) {
+       button.addEventListener('click', function() {
+           if (this.getAttribute('data-type') === 'spin') {
+            generateSpinResult();
+
+           } else if (this.getAttribute('data-type') === 'HH') {
+               changeSpinActive();
+               hhActive();
+               htInactive();
+               ttInactive();
+               userChoice = 1;
+            //    userChoice = `${this.value}`;
+
+           } else if (this.getAttribute('data-type') === 'HT') {
+               changeSpinActive();
+               htActive();
+               hhInactive();
+               ttInactive();
+               userChoice = 2;
+            //    userChoice = `${this.value}`;
+
+           } else if (this.getAttribute('data-type') === 'TT') {
+               changeSpinActive();
+               ttActive();
+               hhInactive();
+               htInactive();
+               userChoice = 3;
+            //    userChoice = `${this.value}`;
+
+           } else if (this.getAttribute('data-type') === 'decrease bet') {
+               let betChoice = document.getElementById('betAmount').value;
+
+               if (betChoice <= 0) {
+                   betChoice = 0;
+               } else {
+                   decrementBet();
+               }
+
+           } else if (this.getAttribute('data-type') === 'increase bet') {
+               let betChoice = document.getElementById('betAmount').value;
+               let bank = document.getElementById('bank').value;
+
+               if (betChoice >= 499) {
+                   betChoice = 499;
+               } else if (bank > 0) {
+                   incrementBet();
+               } else {
+                outOfMoneyRender();
+               }
+           } else {
+               console.log(throwError);
+           }
+       });
+   }
+});
