@@ -126,11 +126,17 @@
     <!-- HT Coin Toss Animation section -->
     <!-- TT Coin Toss Animation section -->
     <!-- error message secton -->
+    <section id="error" class="popUp" onclick="errorOk();">
+        <div>
+            <img src="assets/images/kevError.webp" alt="Kev showing his tail">
+            <h2 id="errorMessage">Error: </h2>
+        </div>
+    </section>
 
     <!-- Hidden area to record out user choices and spin result for each turn -->
     <div id="choice">
-        <input type="number" id="spinResult" value="0">
-        <input type="number" id="userChoice" value="0">
+        <input type="number" id="spinResult" value="0" disabled>
+        <input type="number" id="userChoice" value="0" disabled>
     </div>
 
     <!-- Bet history and Banking section -->

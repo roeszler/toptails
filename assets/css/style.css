@@ -439,6 +439,28 @@ footer > button:hover {
 
 
 /* ------ Error message Styling */
+#error {
+    display: none;
+}
+
+#error h2 {
+    color: #FF0000;
+    font-size: 2.5rem;
+}
+
+#error p {
+    color: #3B3B3F;
+    font-size: 1rem;
+}
+
+#error a {
+    font-size: inherit;
+    color: #00843D;
+}
+
+#error img {
+    margin-top: 1.2rem;
+}
 
 /* ------ Hide spin choice section */
 
