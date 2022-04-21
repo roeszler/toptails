@@ -122,6 +122,17 @@ function resetSpin() {
    resetSpin.style.color = '#fff';
 }
 
+// ------ Change spin button color on bet selection
+/**
+* Changes the color of the spin button on bet type selection 
+*/
+function changeSpinActive() {
+   let spin = document.getElementById('spin');
+   spin.style.backgroundColor = '#008C44';
+   spin.style.color = '#ff0';
+   spin.disabled = false;
+}
+
 // ------ Modal Displays to indicate user initiated events
 // ------ Player Wins Modal 
 /**
