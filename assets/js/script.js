@@ -31,6 +31,27 @@ function incrementBank() {
    parseInt(bankAfter);
 }
 
+/**
+* increases the bet amount, max 100.
+*/
+function incrementBet() {
+   let betBefore = document.getElementById('betAmount').value;
+   let betAfter = document.getElementById('betAmount').value = ++betBefore;
+   
+   parseInt(betAfter);
+   decrementBank(); 
+}
+/**
+* decreases the bet amount, min 1.
+*/
+function decrementBet() {
+   let betBefore = document.getElementById('betAmount').value;
+   let betAfter = document.getElementById('betAmount').value = --betBefore;
+   
+   parseInt(betAfter);
+   incrementBank();
+}
+
 // ------ Game Engine Functions
 /**
 * Generates the spin result as a random number between 1 and 3
