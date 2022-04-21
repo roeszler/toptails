@@ -104,6 +104,42 @@ button:hover {
 }
 
 /* ------ betAmount Buttons */
+.btn--bet {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+    height: 1.6em;
+    width: 1.6em;
+    border-radius: 50%;
+    border: 0px;
+}
+
+.btn--add {
+    color: #00008B;
+}
+
+.btn--add:hover {
+    background-color: #00008B;
+    color: #fff;
+}
+
+.btn--minus {
+    color: #FF0000;
+}
+
+.btn--minus:hover {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+.amount-area input {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: inherit;
+    border: none;
+    width: 6rem;
+}
 
 /* Hide the up/down arrows styling on input fields */
 
