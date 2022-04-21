@@ -134,7 +134,14 @@ function gameplayRender() {
     document.getElementById('game-area').style.display = 'block';
  }
 
- 
+ /**
+* Resets the color of the spin button after 'click' event
+*/
+function resetSpin() {
+   let resetSpin = document.getElementById('spin');
+   resetSpin.style.backgroundColor = '#3B3B3F33';
+   resetSpin.style.color = '#fff';
+}
 
 // ------ DOM Listeners
 // Window: DOMContentLoaded events
