@@ -87,11 +87,17 @@ function generateSpinResult() {
     }
 }
 
-
+/**
+* Resets the betAmount to 0 after a loss
+*/
+function betToNone() {
+   document.getElementById('betAmount').value = 0;
+}
 
 
 
 // ------ Bank and Bet zero event 
+
 /**
 * condition for a game over event
 */
