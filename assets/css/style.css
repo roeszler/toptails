@@ -84,7 +84,7 @@ button:hover {
     max-width: 1024px;
     padding: 1rem;
     margin: 0 auto;
-    /* display: none; */
+    display: block;
 }
 
 #game-area h2 {
@@ -140,8 +140,21 @@ button:hover {
     width: 6rem;
 }
 
-/* Hide the up/down arrows styling on input fields */
+/* 
+Hide the up/down arrows styling on input fields. researched via: 
+- https://khaalipaper.com/html/remove-arrows-from-input-type-number.php and 
+- https://stackoverflow.com/questions/23372903/hide-up-down-arrow-buttons-spinner-in-input-number-firefox-29
+*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Safari/Chrome, other WebKit */
+  appearance: none; /* remainder */
+  margin: 0;
+}
 
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox, other Gecko */
+}
 /* ------ betType Buttons */
 
 /* ------ Pseudo Selector for coins */
