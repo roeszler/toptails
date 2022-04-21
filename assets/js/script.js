@@ -177,6 +177,45 @@ function generateSpinResult() {
 }
 
 /**
+* calculates the win / loss of users bet Aount to game rules
+*/
+function calculateWinLoss() {
+    let spinResult = document.getElementById('spinResult').value;
+    userChoice = document.getElementById('userChoice').value;
+
+    if (parseInt(spinResult) == parseInt(userChoice)) {
+        winnerRender();
+        if (parseInt(userChoice) == 1 || parseInt(userChoice) == 2) {
+            betAmount = document.getElementById('betAmount').value * 2;
+            for(let i = 0; i < betAmount; i++) {
+                incrementBank();
+            }
+        } else if (parseInt(userChoice) == 3) {
+            betAmount = document.getElementById('betAmount').value * 4;
+            for(let i = 0; i < betAmount; i++) {
+                incrementBank();
+            }
+        }
+    } else {
+        looseRender();
+        betToNone();
+        compareBankBet();
+        
+        if (parseInt(userChoice) == 3) {
+            let sixTimesTT = document.getElementById('betAmount').value * 6;
+            for(let i = 0; i < sixTimesTT; i++) {
+                incrementKev();
+            }
+        } else {
+            betAmount = document.getElementById('betAmount').value;
+            for(let i = 0; i < betAmount; i++) {
+                incrementKev();
+            }
+        }
+    }
+}
+
+/**
 * Resets the betAmount to 0 after a loss
 */
 function betToNone() {
