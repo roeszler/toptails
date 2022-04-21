@@ -88,7 +88,19 @@ function gameOverOk() {
    document.getElementById('gameplayPopup').style.display = 'none';
 }
 
+// Spin button 
+ /**
+ * Display game-area section & hide hhSpin section
+ */
+ function spinOk() {
+    document.getElementById('hhSpin').style.display = 'none';
+    document.getElementById('htSpin').style.display = 'none';
+    document.getElementById('ttSpin').style.display = 'none';
+    document.getElementById('game-area').style.display = 'block';
+    document.getElementById('gameplayPopup').style.display = 'none';
+ }
 
+ 
 
 // ------ DOM Listeners
 // Window: DOMContentLoaded events

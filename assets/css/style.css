@@ -84,7 +84,7 @@ button:hover {
     max-width: 1024px;
     padding: 1rem;
     margin: 0 auto;
-    display: block;
+    display: none;
 }
 
 #game-area h2 {
