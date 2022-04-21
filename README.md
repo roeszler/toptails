@@ -453,6 +453,7 @@ Each of these included research and implementation of:
   * The screen size for mockups and responsiveness testing was sampled from [GBK Soft](https://gbksoft.com/blog/common-screen-sizes-for-responsive-web-design/) and based current resolutions typically found globally
   * The text for the site was imported via google fonts as [Montserrat](https://fonts.google.com/specimen/Montserrat) by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly.
   * Timing, loading and logging of the document object model (DOM) events - [Window: DOMContentLoaded_event](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) and [Document: DOMContentLoaded_event](https://stackoverflow.com/questions/588040/window-onload-vs-document-onload).
+  * Adding a 'Pseudo Selector' to add content before an element, in this case the coin buttons - [CSS-Tricks.com](https://css-tricks.com/pseudo-class-selectors/).
 
 ### Media
 
