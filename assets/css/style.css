@@ -157,6 +157,28 @@ input[type=number] {
 }
 
 /* ------ betType Buttons */
+.bet-area button {
+    background-color: #3B3B3F33;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    min-height: 4em;
+    min-width: 4em;
+    margin: 1em 1em 2em;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    content: attr(data-type);
+}
+
+.bet-area button:hover {
+    background-color: #00008B;
+}
+
+.bet-area button:focus {
+    background-color: #ff0;
+    color: #00843D;
+    transform: scale(1.1);
+}
 
 /* ------ Pseudo Selector for coins */
 
