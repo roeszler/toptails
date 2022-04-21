@@ -388,7 +388,34 @@ footer > button:hover {
 }
 
 /* ------ Gameplay Modal */
+#gameplayPopup {
+    display: block;
+}
 
+#gameplayPopup i {
+    color: #3B3B3F;
+    padding-top: 1rem;
+}
+
+#gameplayPopup h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+#gameplayPopup button {
+    margin-top: 2rem;
+    bottom: 0;
+}
+
+.toGame {
+    background-color: #00843D;
+    color: #fff;
+    border: none;
+}
+
+.toGame:hover {
+    color: #ff0;
+}
 
 
 
