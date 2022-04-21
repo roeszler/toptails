@@ -69,6 +69,10 @@ button:hover {
 }
 
 /* ------ Logo */
+.logo {
+    height: 9em;
+    padding: 1em 0;
+}
 
 /* ------ Game area */
 
