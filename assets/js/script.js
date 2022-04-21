@@ -49,7 +49,7 @@ function looseRender() {
     document.getElementById('gameplayPopup').style.display = 'none';
 }
 
-// Final game win render
+// Final game win
 /**
  * Display gameWinPopup section & hide game-area section
  */
@@ -65,6 +65,27 @@ function gameWinOk() {
     document.getElementById('gameWinPopup').style.display = 'none';
     document.getElementById('game-area').style.display = 'block';
     document.getElementById('gameplayPopup').style.display = 'none';
+}
+
+// Game over 
+/**
+* Display gameOverPopup section & hide game-area section
+*/
+function gameOverRender() {
+   document.getElementById('gameOverPopup').style.display = 'block';
+   document.getElementById('game-area').style.display = 'none';
+   document.getElementById('gameplayPopup').style.display = 'none';
+   document.getElementById('outOfMoneyPopup').style.display = 'none';
+   document.getElementById('lossPopup').style.display = 'none';
+}
+
+/**
+* Display game-area section & hide gameOverPopup section
+*/
+function gameOverOk() {
+   document.getElementById('gameOverPopup').style.display = 'none';
+   document.getElementById('game-area').style.display = 'block';
+   document.getElementById('gameplayPopup').style.display = 'none';
 }
 
 
