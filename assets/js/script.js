@@ -52,6 +52,95 @@ function decrementBet() {
    incrementBank();
 }
 
+/**
+* Keeps the color of the TwoHeads button on bet type selection 
+*/
+function hhActive() {
+    let hhActive = document.getElementById('TwoHeads');
+    hhActive.style.backgroundColor = '#ff0';
+    hhActive.style.color = '#008C44';
+    hhActive.style.transform = 'scale(1.1)';
+    hhActive.innerHTML = '&nbsp;<i class="fas fa-check-double"></i>';
+    let userChoice = document.getElementById('userChoice').value = 1;
+    console.log(userChoice);
+}
+/**
+* Turns off the color of the TwoHeads button on bet type selection 
+*/
+function hhInactive() {
+    let hhInactive = document.getElementById('TwoHeads');
+    hhInactive.style.backgroundColor = '#3B3B3F33';
+    hhInactive.style.color = '#fff';
+    hhInactive.style.transform = 'scale(1)';
+    hhInactive.innerHTML = '&nbsp;<i class="fas fa-coins"></i>';
+}
+
+/**
+* Keeps the color of the HeadsTails button on bet type selection 
+*/
+function htActive() {
+    let htActive = document.getElementById('HeadTails');
+    htActive.style.backgroundColor = '#ff0';
+    htActive.style.color = '#008C44';
+    htActive.style.transform = 'scale(1.1)';
+    htActive.innerHTML = '&nbsp;<i class="fas fa-check-double"></i>';
+    let userChoice = document.getElementById('userChoice').value = 2;
+    console.log(userChoice);
+}
+/**
+* Turns off the color of the HeadTails button on bet type selection 
+*/
+function htInactive() {
+    let htInactive = document.getElementById('HeadTails');
+    htInactive.style.backgroundColor = '#3B3B3F33';
+    htInactive.style.color = '#fff';
+    htInactive.style.transform = 'scale(1)';
+    htInactive.innerHTML = '&nbsp;<i class="fas fa-coins"></i>';
+}
+
+/**
+* Keeps the color of the TailsTails button on bet type selection 
+*/
+function ttActive() {
+    let ttActive = document.getElementById('TwoTails');
+    ttActive.style.backgroundColor = '#ff0';
+    ttActive.style.color = '#008C44';
+    ttActive.style.transform = 'scale(1.1)';
+    ttActive.innerHTML = '&nbsp;<i class="fas fa-check-double"></i>';
+    let userChoice = document.getElementById('userChoice').value = 3;
+    console.log(userChoice);
+}
+/**
+* Turns off the color of the TailsTails button on bet type selection 
+*/
+function ttInactive() {
+    let ttInactive = document.getElementById('TwoTails');
+    ttInactive.style.backgroundColor = '#3B3B3F33';
+    ttInactive.style.color = '#fff';
+    ttInactive.style.transform = 'scale(1)';
+    ttInactive.innerHTML = '&nbsp;<i class="fas fa-coins"></i>';
+}
+
+/**
+* Changes the color of the spin button on bet type selection 
+*/
+function changeSpinActive() {
+   let spin = document.getElementById('spin');
+   spin.style.backgroundColor = '#008C44';
+   spin.style.color = '#ff0';
+   spin.disabled = false;
+}
+
+
+
+
+
+
+
+
+
+
+
 // ------ Game Engine Functions
 /**
 * Generates the spin result as a random number between 1 and 3
@@ -120,17 +209,6 @@ function resetSpin() {
    let resetSpin = document.getElementById('spin');
    resetSpin.style.backgroundColor = '#3B3B3F33';
    resetSpin.style.color = '#fff';
-}
-
-// ------ Change spin button color on bet selection
-/**
-* Changes the color of the spin button on bet type selection 
-*/
-function changeSpinActive() {
-   let spin = document.getElementById('spin');
-   spin.style.backgroundColor = '#008C44';
-   spin.style.color = '#ff0';
-   spin.disabled = false;
 }
 
 // ------ Modal Displays to indicate user initiated events
