@@ -242,6 +242,22 @@ footer > button:hover {
 }
 
 /* ------ Global style for 'popUps' (Modals) */
+.popUp {
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #000;
+    box-sizing: border-box;
+    display: flex;
+    height: 75vh;
+    width: 85%;
+    justify-content: center;
+    margin: 0 auto;
+    max-height: 480px;
+    max-width: 1024px;
+    overflow: auto;
+    padding: 1rem;
+    text-align: center;
+}
 
 /* ------------ Modal specific styles */
 /* ------ Winner Alert Modal Css */
