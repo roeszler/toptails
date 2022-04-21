@@ -462,7 +462,7 @@ window.addEventListener('load', (event) => {
 // ------ Document: DOMContentLoaded Event Listeners
 
 /**
-* DOM button controls and user choices
+* DOM button listener that runs controls and user choices
 */
 document.addEventListener('DOMContentLoaded', function() {
    let buttons = document.getElementsByTagName('button');
