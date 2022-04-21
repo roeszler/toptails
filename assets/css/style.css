@@ -181,6 +181,10 @@ input[type=number] {
 }
 
 /* ------ Pseudo Selector for coins */
+.btn--coin::before {
+    content: attr(data-type);
+    position: relative;
+}
 
 /* ------ Spin Button */
 
