@@ -522,3 +522,19 @@ document.addEventListener('DOMContentLoaded', function() {
        });
    }
 });
+
+/**
+ * Listener for end animation sequence of coin spin
+ */
+hhCoinEnd.addEventListener("animationend", function() {
+    let spinResult = document.getElementById('spinResult').value;
+    userChoice = document.getElementById('userChoice').value;
+
+    if (parseInt(spinResult) === 1 && parseInt(userChoice) == 1) {
+        winnerRender();
+        incrementWinPoints2();
+        calculateWinLoss();
+    } else {
+        calculateWinLoss();
+    }
+});
