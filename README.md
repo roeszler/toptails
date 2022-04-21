@@ -25,12 +25,14 @@ Site link : https://roeszler.github.io/toptails/
         * [Score Area](#score--bank-balance-area)
         * [Footer](#footer)
         * [PopUps](#popups)
-        * [Redord Choices](#choice)
-    * [Features Left To Implement](#features-left-to-implement)
+        * [Record User Choices](#choice-html)
+    * [Future Features](#possible-future-features)
 4. [Technologies](#4-technologies)
+    * [Tools](#tools)
+    * [Browsers](#supported-screens-and-browsers)
 5. [Testing](#5-testing)
-    * [Validator Testing](#validator-testing)
     * [Issues and Resolutions](#issues--resolutions)
+    * [Validator Testing](#validator-testing)
 6. [Deployment](#6-deployment)
 7. [Credits](#7-credits)
     * [Content](#content)
@@ -191,7 +193,7 @@ Each button has three states:
 
 * This is the first interactive state of the buttons.
 * The user performing a 'mouse over' action each option will enlarge and change color, indicating interactivity and intuitively prompting the user to do something.
-* Each button has an embedded `title=" "` tag within the html allowing information to be rendered on the mouse hover interaction.
+* Each button has an embedded `title=" "` tag within the html allowing information to be rendered on mouse hover.
 
 3. The Active State
 
@@ -220,101 +222,169 @@ A close look at the game area from the words 'Bet Amount' to the 'Spin' button, 
 * The colors chosen (red for Kev, green for the User) are to further promote a sense of what the user want's to occur (an increase in green) and avoid what they don't want to occur (an increase in red).
 * The icon imagery has been selected to further conveys meaning of what each score relates; cash register for computer taking the points and a piggy bank for the user banking the points.
 * Text format selected to convey a sense of accounting and/or recording of official numerical data.
-* The layout of this area also provides a quick reference and reinforcement to the objectiveof the game; get to 500 points before Kev teh Koala does!
+* The layout of this area also provides a quick reference and reinforcement to the objectiveof the game; get to 500 points before Kev the Koala does!
 
 #### Footer
 ![Footer](assets/images/footer.webp)
+* Providing a link to the splash page gameplay information and educational links to history of Two Up and the Australian culture surrounding it.
 
 #### PopUps
-As discussed in the [game area](#game-area) section, As an alternative to using `alert()` functions which can be blocked by some browsers and mobile devices, I have coded functions to simultaneously remove and display sections to convey major game events. 
+As discussed in the [game area](#game-area) section, an alternative to using `alert()` functions has been used. The supporting code simultaneously removes and displays sections to convey major game events to the user. 
 
-These functions although termed as a 'popup' accorss the site, appear in a similar way, they however function more as a change of state in the HTML styling / visibility. This has been done as a way to not-be-limited by potential browser settings that block traditional popups.
+These functions appear and are termed as a 'popups' accorss the site, they function more as a change of visibility in the HTML. This has been done as a way to not-be-limited by potential browser settings that block traditional popups.
 
 There are a total of ten (10) of these change of state 'popups' across the site: 
-* Gameplay
-* Winner 
-* Looser 
-* Game Over 
-* Game Win Final
-* Out of money 
-* Coin animations
-  * Head Head
-  * Head Tail
-  * Tail Tail
-* Error Event
+* [Gameplay](assets/images/gamePlay.webp) - indicates the rules and gameplay of TopTails. Lets play button.
+* [Winner](assets/images/winnerPopup.webp) - in the event of a win each turn. It details a win message and how many points have been won on the amount wagered. Australian green and yellow coloring. Bank points button.
+* [Looser](assets/images/looserPopup.webp) - in the event of a loss each turn. Simple non-complementary primary colors. Return to game button.
+* [Game Over](assets/images/gameOverPopup.webp) - in the event of zero funds and bet amount, or when Kev reaches 500 points before the user. 
+* [Game Win Final](assets/images/gameWinFinal.webp) - in the event of user reaching 500 points. Australian flag blue and white with celebrating koala image. Share with friends on social media button.
+* [Out of money](assets/images/outOfMoney.webp) - in the event the user tries to increment the bet more than the amount they have in the bank. Notifies that the bank is empty. 
+* [Coin animations](assets/images/coinFlip.webp) - animation displayed for 3s at the spin event.
+  * Head Head - results in two heads turning up.
+  * Head Tail - results in one head plus one tail turning up.
+  * Tail Tail - results in two tails turning up.
+* [Error Event](assets/images/error.webp) - in the event that a NaN input occurs or another unidentifed error occurs.
 
-#### Choice
-###
-
-- __The Love Maths Logo and Heading__
-
-  - Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
-
-![Logo](media/love_maths_logo.png)
-
-- __The Game Area__
-
-  - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
-  - The user will be able to select the type of maths game they will be playing by clicking on the different icons. 
-
-![Game](media/love_maths_icons.png)
-
-- __The Question section__
-
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
-
-![Question](media/love_maths_question.png)
-
-- __The Score Area__
-
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
-
-![score](media/love_maths_answer.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-### Features Left to Implement
-
-* Resollve the larger `eventListeners` + `if` / `else` functions into `switch()` / `case` functions.
-* Increase difficulty / interaction levels
-* Refinement of game odds
-* Lends itself to further refinement and devlopment into a live version.
+#### Choice HTML
+This is a hidden section within the body of the `HTML` used to pivot data and log bet choices at any given turn. Never seen by the user as `style.display: none;`, it is used in the functions to select, re-select and sticky select between turns.
+### Possible Future Features
+* Resollve the larger `eventListeners` + `if` / `else` functions into `switch()` / `case` function.
+* Include levels play, with increasing difficulty levels.
+* Re-style for annual events (ie Christmas, St Patricks Day, Remeberance Day, ANZAC Day, Australia Day)
+* Refinement of game probability model away from 1 in 3 to 1 in 4, and subsequent adjustment of the odds for each.
+* The game itself to further refinement and devlopment into a live version.
   * Possibly a purchasable credits system,
   * Connection to and from live financial accounts,
   * Change the game end upper limit to a cash-out scenario.
 
 ## 4. Technologies
+### Tools
+The skillsets used in the creation and review of this project are based around a working knowledge of HTML5, CSS and JavaScript. The tools and the benefit of using each in the site development are : 
+
+* [GitHub](https://github.com/)
+  * Allows a variety of benefits to create, document, store, showcase and share a project in development.
+* [GitPod](https://www.gitpod.io/)
+  * Provides a relatively secure workspace to code and develop software projects in a remotely accessible cloud based platform.   
+* [Google Fonts](https://fonts.google.com/)
+  * Is a free to use, reliable, remotely accessible database of web ready fonts endorsed by google that are familiar to most users.
+* [FavIcon Generator](https://favicon.io/)
+  * A simple, free to use image conversion tool to generate icon files ready for use in a variety of applications.
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+  * The current agreed standard, HTML5 is a free to use, well established markup language recommended by the World [Wide Web Consortium](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) (W3C) for programming. It is easily read by humans and consistently understood by computers and associated devices.
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+  * A style sheet language that allows the separation of presentation variables (like layout, colors and fonts) from the content variables that has been defined in the markup languages (like HTML &/or JavaScript). The separation allows either local or site wide changes to occur in the one place.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) 
+  * A programming language that allows event-driven, functional, and imperative programming styles that (through application programming interfaces) can be applied to content like text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).  
+* [Convertio Image Optimiser](https://convertio.co/)
+  * Able to reduce the file size and format of images ready for rapid access, improving device performance, accessibility and user experience.
+* [Font Awesome](https://fontawesome.com/)
+  * Is a partly free to use, remotely accessible database of fonts and icons helpful for projecting implied meaning through vector graphics.
+* [Balsamiq Wireframes](https://balsamiq.com/)
+  * A low-fidelity wire-framing tool to visualise and clarify features, interactions in the [skeleton plane](docs/ucd/4-skeleton.md) phase of UCD.
+* [Pixlr Online Photo Editor](https://pixlr.com/e/#home)
+  * A free online photo editor that allows you to create &/or manipulate images for use in projects.
+
+### Supported Screens and Browsers
+Toptails is designed to be a casual, relatively simple game of chance that is coded simply at it's current iteration. Considering this, the primary medium for gameplay is predicted to be on mobile devices.
+
+Testing was performed on a mix of screen sizes currently seen in the global marketplace sourced from [GBK soft research](https://gbksoft.com/blog/common-screen-sizes-for-responsive-web-design/) between January 2020 to January 2021.
+
+Considering this the game area has been coded with a `max-width: 1024px;` on desktops size screens to emulate the same profile as lower resolution tablet widths (768×1024px). Responsivity has been coded to change the layout tablet width of 768px, allowing a 'code once approach' to change the layout for mobile devices below this width. Users at this screen size are able to simply change the orientation of their device to suit the layout.
+
+The TopTails TwoUp site has been created using [GitPod](https://www.gitpod.io/) on a google chrome browser in conjunction with the chrome development environment. 
+
+The site has been tested on each of the following popular browsers to check for maintained function and interactivity :
+- [Google Chrome](https://www.google.com/chrome/)
+- [Microsoft Edge](https://www.microsoft.com/en-us/edge) 
+- [Apple Safari](https://www.apple.com/safari/)
+- [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
+
 ## 5. Testing 
+#### First Time Visitors
+* As a first time user, I wan't to quickly understand the purpose of the site.
+  * [Gameplay](assets/images/gamePlay.webp) popup functioning correctly attends to this.
+* As a first time user, I wan't to understand the rules of the game.
+  * [Gameplay](assets/images/gamePlay.webp) popup functioning correctly attends to this.
+  * Intuitive structure of the layout and [design](#design).
+* As a first time user, I wan't to understand how the game is ended.
+  * [Gameplay](assets/images/gamePlay.webp) and [design](#design) structure.
+* As a first time user, I wan't to identify that it is a game of chance.
+  * [Spin Button](#spin-button) and [Coin animations](assets/images/coinFlip.webp) popup functioning correctly attends to this. 
+* As a first time user, I wan't to be able to selcet chioces in a simple and intuitive way.
+  * [Bet Type](#bet-type-area) and [Bet Amount](#bet-amount-area) areas functioning correctly attend to this.
+* As a first time user, I wan't to inititate the game play in a simple and intutive way.
+  * [Spin Button](#spin-button) functioning correctly attends to this.
+* As a first time user, I wan't the game to require interaction with me.
+  * [Bet Amount](#bet-amount-area), [Spin Button](#spin-button), all [popups](#popups), [Bet Select](#bet-type-area) and [footer](#footer) links functioning correctly, attend to this.
+* As a first time user, I wan't ways to learn more about the author, topic and history surrounding the game.
+  * [Game Over](assets/images/gameOverPopup.webp) button and [footer](#footer) links functioning correctly attend to this.
+* As a first time user, I wan't ways to refer the game to my friends.
+  * [Game Over](assets/images/gameOverPopup.webp) functions correctly and is attend to this.
+#### Returning Visitors
+* As a returning user, I wan't to try to beat the computersied opponent (Kev the Koala) to 500 points without breaking the bank.
+  * [Game Structure](assets/images/gameArea.webp) functioning correctly attends to this.
+* As a returning user, I wan't to engage with [game theory](https://en.wikipedia.org/wiki/Game_theory) as a pastime to beat a virtual opponent.
+  * [Game Structure](assets/images/gameArea.webp) functioning correctly attends to this.
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-
-### Validator Testing 
-
-- HTML
-    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
-- CSS
-    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-- JavaScript
-    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
-      - The following metrics were returned: 
-      - There are 11 functions in this file.
-      - Function with the largest signature takes 2 arguments, while the median is 0.
-      - Largest function has 10 statements in it, while the median is 3.
-      - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+#### Coding Colleagues
+* As a fellow code writing user, I wan't to see how the java script has been written and operates.
+  * Site listed publically at authors [GitHub](https://github.com/roeszler/toptails) repository - https://github.com/roeszler/toptails
+* As a fellow code writing user, I wan't to be abel to contact the author.
+  * See authors [GitHub](https://github.com/roeszler) profile seen at the [footer](#footer) section.
 
 ### Issues & Resolutions
 
+* Hide Up & Down Arrow Buttons (Spinner) in Input Number - [Firefox](https://stackoverflow.com/questions/23372903/hide-up-down-arrow-buttons-spinner-in-input-number-firefox-29).
+* Images not displaying on all browsers using the realtive file path annotation `../`. Removed annoation. Functioning correctly.
+* Event listener code at lines 443 and 505 reference outer scoped variables. See [JS Hint warnings](#one-warning).
+* JSHint validation indicates that there are 13 unsued functions. See [Unused variables](#13-unused-variables).
+* Correct event listener for animation re-running `calculateWinLoss();`and `generateSpinResult();` twice.
+* Include `changeSpinActive();` function to betType buttons
+* Code bank to not progress past zero: `} else if (bank > 0) {`.
+* Code withdraw and deposit bank functions increment by 1 `document.getElementById('bank').innerHTML = parseInt(bank) - parseInt(1);` and `document.getElementById('bank').innerHTML = parseInt(bank) + parseInt(1);`.
+* `betAmount input:disabled{}` styling
+
 You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+
+### Validator Testing 
+
+* HTML
+    * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F).
+
+* CSS
+    * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+
+* JavaScript
+  
+  * No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+  * The following metrics were returned: 
+    * There are 41 functions in this file.
+    * Function with the largest signature take 0 arguments, while the median is 0.
+    * Largest function has 28 statements in it, while the median is 4.
+    * The most complex function has a cyclomatic complexity value of 10 while the median is 1.
+
+  #### One Warning:
+  447. Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (generateSpinResult, changeSpinActive, hhActive, htInactive, ttInactive, userChoice, htActive, hhInactive, ttActive, decrementBet, incrementBet, outOfMoneyRender, throwError).
+    * Event listener code at lines 443 and 505 reference outer scoped variables. The Js validation process indicates that this may lead to confusing semantics. I have been unable to find a suitable alternative to these semantics that functions, outside of repeating code at each iteration. This would make the resulting event listener structure a lot larger and less manageable due to the repeated code so I have decided to allow the warning to remain.
+  
+  #### 13 Unused Variables:
+  
+    * refreshPage();
+    * linkedIn();
+    * winnerOk();
+    * looseOk();
+    * gameWinRender();
+    * gameWinOk();
+    * gameOverOk();
+    * spinOk();
+    * outOfMoneyOk();
+    * gameplayRender();
+    * gameplayOk();
+    * resetSpin();
+    * errorOk();
+    
+    JSHint validation indicates that there are 13 unsued functions. I have created each of these functions to sit within their relative HTML element and allow user events to activate them and control numerous functions to occur. I have decided to allow the unused variables notification to remain in exchange for the functionality it permits.
 
 ## 6. Deployment
 
