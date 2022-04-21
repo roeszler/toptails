@@ -1,3 +1,70 @@
-/* Import statements  */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
+/* Import statements */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap');
 
+/* ------ Global style */
+
+/* ------ Hyperlinks */
+
+/* ------ Footer */
+
+/* ------ Logo */
+
+/* ------ Game area */
+
+/* ------ betAmount Buttons */
+
+/* Hide the up/down arrows styling on input fields */
+
+/* ------ betType Buttons */
+
+/* ------ Pseudo Selector for coins */
+
+/* ------ Spin Button */
+
+/* ------ Scores area */
+
+
+
+/* ------ Global style for 'popUps' (Modals) */
+
+/* ------------ Modal specific styles */
+/* ------ Winner Alert Modal Css */
+
+/* ------ Kev Wins Alert Modal */
+
+/* ------ Game Over Modal */
+
+/* ------ Game Win Final Modal */
+
+/* ------ Bank Empty Modal */
+
+/* ------ Gameplay Modal */
+
+
+
+/* ------------ Betting Coin Animations  */
+/* ------ Global coin Animation & Styling */
+
+/* ------ HH & TT Left coin ANIMATION  */
+
+/* ------ HH & TT Right coin ANIMATION */
+
+/* ------ HH & TT Left Coin Spin STYLING */
+
+/* ------ HH & TT Right Coin Spin STYLING */
+
+
+/* ------ HT Left coin ANIMATION  */
+
+/* ------ HT Right coin ANIMATION  */
+
+/* ------ HT Left Coin Spin STYLING */
+
+/* ------ HT Right Coin Spin STYLING */
+
+
+/* ------ Error message Styling */
+
+/* ------ Hide spin choice section */
+
+/* ------ Media Queries */
