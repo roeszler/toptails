@@ -203,6 +203,25 @@ input[type=number] {
 }
 
 /* ------ Scores area */
+.scores {
+    display: inline-block;
+    padding: 0 1rem;
+}
+.operand {
+    color: #FF0000;
+    border: none;
+    background: none;
+    max-width: 2rem;
+    text-align: right;
+    font-size: inherit;
+    content: attr(data-type);
+    font-family: inherit;
+    font-weight: 400;
+}
+
+#bank {
+    color: #00008B;
+}
 
 /* ------ Footer */
 footer {
