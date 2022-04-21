@@ -259,8 +259,56 @@ footer > button:hover {
     text-align: center;
 }
 
+.popupBtn {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px 30px;
+    border-radius: 0.5rem;
+}
+
 /* ------------ Modal specific styles */
 /* ------ Winner Alert Modal Css */
+#winnerPopup {
+    display: none;
+    border: silver;
+    background: #ff0;
+    border-width: 0.25em;
+    border-style: groove;
+    padding-top: 3em;
+}
+
+#winnerPopup h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 1rem 0rem;
+}
+
+#winnerPopup h3 {
+    margin: 0rem 0rem 0.5rem;
+}
+
+#spinAgain {
+    background-color: #00843D;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 0.25em;
+  }
+
+#winPoints {
+    color: #00843D;
+    font: inherit;
+    text-align: center;
+    font-size: 2.5rem;
+    min-width: 6rem;
+}
+
+#bankBtn {
+    background-color: #00008B;
+    font-weight: 600;
+    color: #fff;
+}
 
 /* ------ Kev Wins Alert Modal */
 
