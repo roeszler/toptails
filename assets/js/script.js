@@ -1,5 +1,16 @@
 // ------ Global Constants & Variables 
 
+/**
+ * Declare constants for DOM Choices 
+ * and possible choices
+ */
+let betAmount = document.getElementById('betAmount').value;
+let bank = document.getElementById('bank').value;
+let userChoice = document.getElementById('userChoice').value;
+let hhCoinEnd = document.getElementsByClassName('leftCoinFront')[0];
+let htCoinEnd = document.getElementsByClassName('leftCoinFrontHT')[0];
+let ttCoinEnd = document.getElementsByClassName('leftCoinFront')[1];
+
 // ------ Functions
 
 
