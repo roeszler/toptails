@@ -12,12 +12,26 @@ let htCoinEnd = document.getElementsByClassName('leftCoinFrontHT')[0];
 let ttCoinEnd = document.getElementsByClassName('leftCoinFront')[1];
 
 // ------ Functions
+// ------ Game Engine Functions
 
 
+/**
+* condition for a game over event
+*/
+function compareBankBet() {
+    let ba = document.getElementById('betAmount').value;
+    let b = document.getElementById('bank').value;
+    
+    if (parseInt(ba) + parseInt(b) == 0) {
+        gameOverRender();
+    } else {
+        incrementBet();
+    }
+ }
 
-// Modal Displays to indicate user initiated events
 
-// Player Wins Modal 
+// ------ Modal Displays to indicate user initiated events
+// ------ Player Wins Modal 
 /**
 * Display winnerPopup section & hide game-area section
 */
@@ -39,7 +53,7 @@ function winnerOk() {
    document.getElementById('gameplayPopup').style.display = 'none';
 }
 
-// Kev Wins / Player Looses Modal 
+// ------ Kev Wins / Player Looses Modal 
 /**
 * Display lossPopup section & hide game-area section
 */
@@ -60,7 +74,7 @@ function looseRender() {
     document.getElementById('gameplayPopup').style.display = 'none';
 }
 
-// Final game win
+// ------ Final game win
 /**
  * Display gameWinPopup section & hide game-area section
  */
@@ -78,7 +92,7 @@ function gameWinOk() {
     document.getElementById('gameplayPopup').style.display = 'none';
 }
 
-// Game over 
+// ------ Game over 
 /**
 * Display gameOverPopup section & hide game-area section
 */
@@ -99,7 +113,7 @@ function gameOverOk() {
    document.getElementById('gameplayPopup').style.display = 'none';
 }
 
-// Spin button 
+// ------ Spin button 
  /**
  * Display game-area section & hide hhSpin section
  */
@@ -111,7 +125,7 @@ function gameOverOk() {
     document.getElementById('gameplayPopup').style.display = 'none';
  }
 
-// Out of money function 
+// ------ Out of money function 
  /**
 * Display gameOverPopup section & hide game-area section
 */
@@ -129,7 +143,7 @@ function outOfMoneyRender() {
     document.getElementById('gameplayPopup').style.display = 'none';
  }
 
-//  Gamplay Modal 
+// ------ Gamplay Modal 
 /**
 * Display gameplayPopup section & hide game-area section
 */
@@ -154,6 +168,7 @@ function resetSpin() {
    resetSpin.style.color = '#fff';
 }
 
+// ------ Error function
 /** 
  * Throw error function 
  */
@@ -187,11 +202,11 @@ function errorOk () {
 }
 
 // ------ DOM Listeners
-// Window: DOMContentLoaded events
+// ------ Window: DOMContentLoaded events
 
 window.addEventListener('load', (event) => {
   console.log('page is fully loaded');
 });
 
-// Document: DOMContentLoaded events
+// ------ Document: DOMContentLoaded events
 
