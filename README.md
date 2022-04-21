@@ -15,6 +15,7 @@ Site link : https://roeszler.github.io/toptails/
         * [Imagery](#imagery)
         * [Fonts](#fonts)
         * [Color Scheme](#color-scheme)
+        * [Site Mockup & Wireframe](#site-mockup--wireframe)
 3. [Features](#3-features)
     * [Existing Features](#existing-features)
         * [Splash Screen (Gameplay & Rules)](#splash-screen--rules)
@@ -115,6 +116,19 @@ Based on providing visual depth and variety of events to the game user, the foll
 | White | #FFF | rgba(255,255,255,1) |
 | Black | #000 | rgba(0,0,0,1) |
 | Silver | #c0c0c0 | rgba(192,192,192,1) |
+
+#### Site Mockup & Wireframe
+
+The feel and function of the wireframes is the initial framework of the site. It is intended to show stakeholders and potential clients early concepts before any coding started.
+
+Contained as [TopTails Wireframe.pdf](assets/images/TopTailsWireframe.pdf) documentation is a visualisation of the layout and simple colouring intended for the site.
+
+The wireframes are intended to convey :
+- An indication of the various elements and positions of these in relation to each other.
+- The actions / content that gets priority via it's location on the screen, actions, animations and embedded interactivity.
+- What is encountered at different stages of the site.
+- Illustrate the more technical requirements in the site to achieve an easy and intuitive navigation to the primary goals of the stakeholders in the site.
+- Convey a sense of the user experience planned for the site as users navigate.
 
 ## 3. Features 
 
