@@ -131,6 +131,13 @@ function changeSpinActive() {
    spin.disabled = false;
 }
 
+/**
+ * function to refresh the window DOM to restart the game
+ */
+function refreshPage() {
+   window.location.reload();
+}
+
 
 
 
