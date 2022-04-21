@@ -42,7 +42,7 @@ Site link : https://roeszler.github.io/toptails/
     * [Media](#media)
 ## 1. Project Purpose
 
-The TwoTails website was created as the second part of my project portfolio while styling the [Code Insitute's Full Stack Software Developer course](https://codeinstitute.net/se/full-stack-software-development-diploma/). It has been built from the ground up to extend myself and demonstrate the use of pure JavaScript (vanilla JavaScript), HTML and CSS employing User Centred Design. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. 
+The TwoTails website was created as the second part of my project portfolio while styling the [Code Insitute's Full Stack Software Developer course](https://codeinstitute.net/se/full-stack-software-development-diploma/). It has been built from the ground up to extend myself, demonstrate the use of JavaScript (vanilla JavaScript), HTML and CSS employing User Centred Design and have some fun. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. 
 
 TopTails is a fully responsive game that allows users to bet, choose and chance their luck at winning against a virtual opponent (Kev the Koala) and beating him to 500 points.  
 
@@ -370,19 +370,22 @@ The site has been tested on each of the following popular browsers to check for 
 
 * JavaScript
   
-  * No errors were found when passing through the official [Jshint validator](https://jshint.com/)
-  * The following metrics were returned: 
+  * The script.js code was passed through the official [Jshint validator](https://jshint.com/) with the following settings:
+
+    ![JSHint Settings](assets/images/docs/JSHintSettings.webp)
+
+  * From the pass, the following metrics were returned: 
     * There are 41 functions in this file.
     * Function with the largest signature take 0 arguments, while the median is 0.
     * Largest function has 28 statements in it, while the median is 4.
     * The most complex function has a cyclomatic complexity value of 10 while the median is 1.
 
-  #### One Warning:
-  447. Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (generateSpinResult, changeSpinActive, hhActive, htInactive, ttInactive, userChoice, htActive, hhInactive, ttActive, decrementBet, incrementBet, outOfMoneyRender, throwError).
-    * Event listener code at lines 443 and 505 reference outer scoped variables. The Js validation process indicates that this may lead to confusing semantics. I have been unable to find a suitable alternative to these semantics that functions, outside of repeating code at each iteration. This would make the resulting event listener structure a lot larger and less manageable due to the repeated code so I have decided to allow the warning to remain.
+  * #### No errors were found
+  * #### One Warning:
+    * Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (generateSpinResult, changeSpinActive, hhActive, htInactive, ttInactive, userChoice, htActive, hhInactive, ttActive, decrementBet, incrementBet, outOfMoneyRender, throwError).
+      * Event listener code at lines 443 and 505 reference outer scoped variables. The Js validation process indicates that this may lead to confusing semantics. I have been unable to find a suitable alternative to these semantics that functions, outside of repeating code at each iteration. This would make the resulting event listener structure a lot larger and less manageable due to the repeated code so I have decided to allow the warning to remain.
   
-  #### 13 Unused Variables:
-  
+  * #### JSHint validation indicates that there are 13 unused variables: 
     * refreshPage();
     * linkedIn();
     * winnerOk();
@@ -397,7 +400,7 @@ The site has been tested on each of the following popular browsers to check for 
     * resetSpin();
     * errorOk();
     
-    JSHint validation indicates that there are 13 unused functions. I have created each of these functions to sit within their relative HTML element and allow user events to activate them and control numerous functions to occur. I have decided to allow the unused variables notification to remain in exchange for the functionality it permits.
+    Each of these functions has been created to sit within their relative HTML element and allow user events to activate them and control numerous functions to occur. The decision has been to allow the unused variables notification to remain. This is in exchange for the functionality that it permits in the game at this stage of my learning.
 
 * Accessibility
   * I confirmed that the colours, contrast and fonts chosen are easy to read and accessible by running it through [lighthouse](https://developers.google.com/web/tools/lighthouse/) in dev tools.

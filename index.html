@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TopTails Two Up allows players to chance their luck at winning against Kevin the Koala and beating him to 500 points">
+    <meta name="keywords" content="chance, australia, two up, toptails, gambilng, game, bet, koala, anzac, australia day, spinner, coins">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/toptails.ico" type="image/x-icon">
@@ -11,36 +13,36 @@
 </head>
 <body>
     <h1 class="heading">TopTails TwoUp</h1>
-    <img class="logo" src="assets/images/toptails-logo-small.webp" alt="TopTails Koala Logo">
+    <img class="logo" src="assets/images/toptails-logo-small.webp" alt="TopTails Koala Logo" aria-label="Picture of site icon. A Koala named Kev">
 
-    <section class="game-area">
+    <section id="game-area">
         <h2>First to 500 Points</h2>
 
-        <!-- Wager amounts area -->
+        <!-- betAmount area -->
         <div class="amount-area">
             <p>Bet Amount: </p>
-            <button data-type="decrease bet" class="btn btn--bet btn--minus">
+            <button data-type="decrease bet" class="btn btn--bet btn--minus" aria-label="The decrease bet button">
                 <i class="fas fa-minus-circle"></i>
             </button>
-            <span class="operand-bet">1</span>
-            <button data-type="increase bet" class="btn btn--bet btn--add">
+            <input id="betAmount" type="number" min="0" value="1" disabled>
+            <button data-type="increase bet" class="btn btn--bet btn--add" aria-label="The increase bet button">
                 <i class="fas fa-plus-circle"></i>
             </button>
         </div>
 
         <!-- Choice of bet area -->
         <div class="bet-area">
-            <button data-type="HH" class="btn btn--coin btn--headhead" onfocus="changeSpinActive()">
+            <button id="TwoHeads" data-type="HH" class="btn btn--coin" title="Bet that Two Heads are spun upwards" onclick="changeSpinActive();" aria-label="Choose to bet on Two Heads being spun upwards" value="1">
                 <i class="fas fa-coins"></i>
             </button>
-            <button data-type="HT" class="btn btn--coin btn--headtail" onfocus="changeSpinActive()">
+            <button id="HeadTails" data-type="HT" class="btn btn--coin" title="Bet a single Head and a single Tail is spun upwards" onclick="changeSpinActive();" aria-label="Choose to bet on a Head and a Tail being spun upwards" value="2">
                 <i class="fas fa-coins"></i>
             </button>
-            <button data-type="TT" class="btn btn--coin btn--tailtail" onfocus="changeSpinActive()">
+            <button id="TwoTails" data-type="TT" class="btn btn--coin" title="Bet that Two Tails are spun upwards" onclick="changeSpinActive();" aria-label="Choose to bet on Two Tails being spun upwards" value="3">
                 <i class="fas fa-coins"></i>
             </button>
         </div>
-        <button id="spin" data-type="spin" class="btn btn--spin" onclick="resetSpin()">Spin</button>
+        <button id="spin" data-type="spin" class="btn btn--spin" aria-label="Spin Button" disabled>Spin</button>
     </section>
 
     <!-- Bet history and Banking section -->
@@ -52,6 +54,7 @@
         <button data-type="gameplay">Gameplay</button>| <a href="https://en.wikipedia.org/wiki/Two-up" target="_blank" aria-label="Link to Wikipedia all about TwoUp"> History</a>
         | <a href="https://en.wikipedia.org/wiki/Australia_Day" target="_blank" aria-label="Link to Wikipedia all about Australia Day"> Australia Day</a> | <a href="https://en.wikipedia.org/wiki/Anzac_Day" target="_blank" aria-label="Link to Wikipedia all about ANZAC Day"> ANZAC Spirit</a>
     </footer>
+    
     <!-- Js and font-awesome icons -->
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/c2dc8de795.js" crossorigin="anonymous"></script>
