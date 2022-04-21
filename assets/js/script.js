@@ -118,6 +118,24 @@ function outOfMoneyRender() {
     document.getElementById('gameplayPopup').style.display = 'none';
  }
 
+//  Gamplay Modal 
+/**
+* Display gameplayPopup section & hide game-area section
+*/
+function gameplayRender() {
+    document.getElementById('gameplayPopup').style.display = 'block';
+    document.getElementById('game-area').style.display = 'none';
+ }
+ /**
+ * Display game-area section & hide gameplayPopup section
+ */
+ function gameplayOk() {
+    document.getElementById('gameplayPopup').style.display = 'none';
+    document.getElementById('game-area').style.display = 'block';
+ }
+
+ 
+
 // ------ DOM Listeners
 // Window: DOMContentLoaded events
 
