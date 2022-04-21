@@ -138,6 +138,13 @@ function refreshPage() {
    window.location.reload();
 }
 
+/**
+* opens linkedIn page of author
+*/
+function linkedIn() {
+   parent.open('https://www.linkedin.com/in/stuartroeszler/');
+}
+
 
 
 
