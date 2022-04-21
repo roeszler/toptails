@@ -335,7 +335,7 @@ The site has been tested on each of the following popular browsers to check for 
 
 ### Issues & Resolutions
 
-* Hide Up & Down Arrow Buttons (Spinner) in Input Number - [Firefox](https://stackoverflow.com/questions/23372903/hide-up-down-arrow-buttons-spinner-in-input-number-firefox-29).
+* Hide Up & Down Arrow Buttons (Spinner) in Input Number - [Firefox](https://stackoverflow.com/questions/23372903/hide-up-down-arrow-buttons-spinner-in-input-number-firefox-29) with `input[type=number] { -moz-appearance: textfield; }`.
 * Images not displaying on all browsers using the realtive file path annotation `../`. Removed annoation. Functioning correctly.
 * Event listener code at lines 443 and 505 reference outer scoped variables. See [JS Hint warnings](#one-warning).
 * JSHint validation indicates that there are 13 unsued functions. See [Unused variables](#13-unused-variables).
@@ -343,17 +343,14 @@ The site has been tested on each of the following popular browsers to check for 
 * Include `changeSpinActive();` function to betType buttons
 * Code bank to not progress past zero: `} else if (bank > 0) {`.
 * Code withdraw and deposit bank functions increment by 1 `document.getElementById('bank').innerHTML = parseInt(bank) - parseInt(1);` and `document.getElementById('bank').innerHTML = parseInt(bank) + parseInt(1);`.
-* `betAmount input:disabled{}` styling
-
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
 
 ### Validator Testing 
 
 * HTML
-    * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F).
+    * No errors were returned when passing through the official [W3C validator]().
 
 * CSS
-    * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+    * No errors were found when passing through the official [(Jigsaw) validator]().
 
 * JavaScript
   
@@ -386,31 +383,61 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
     
     JSHint validation indicates that there are 13 unsued functions. I have created each of these functions to sit within their relative HTML element and allow user events to activate them and control numerous functions to occur. I have decided to allow the unused variables notification to remain in exchange for the functionality it permits.
 
+* Accessibility
+  * I confirmed that the colors, contrast and fonts chosen are easy to read and accessible by running it through [lighthouse](https://developers.google.com/web/tools/lighthouse/) in dev tools.
+
+  ![Accessibility Pic]()
+
 ## 6. Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+### Display Environment (GitHub / GitLab / BitBucket)
+The site has been deployed to GitHub pages. The steps to deploy are as follows: 
+  - Create / open an existing repository for the project with the name of your choice on your GitHub, GitLab or Bitbucket account page.
+  - Navigate within the GitHub repository you chose, and then navigate to the "settings" tab, which displays the general title.
+  - On the left hand navigation menu, I selected the "pages" option midway down the menu.
+  - At the top of the pages tab, the source section drop-down menu changed to select the branch: "main" with the folder selected as "/(root)"
+  - Committed to the save and waited a few moments for the settings to coordinate with the server. 
+  - On refresh of the browser, the dedicated ribbon changed to the selected web address, indicating a successful deployment.
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+> The live site link can be found here - https://roeszler.github.io/toptails/
 
-The live link can be found here - https://roeszler.github.io/toptails/
+> The freely accessible GitHub repository for this site is https://github.com/roeszler/toptails
 
+### Development Environment (GitPod)
+The site has been deployed to GitPod pages. The steps to deploy are as follows:
+* In the GitHub, GitLab or Bitbucket account page where you created a repository for the project, navigate to the tab titled '<> Code'
+* From here, navigate to the button on the top right of the repository navigation pane titled 'Gitpod'.
+* If you press this it will create a new GitPod development environment each time.
+
+Alternatively, if you have already created the GitPod environment for your project : 
+
+* In the browser’s address bar, prefix the entire URL with [gitpod.io/#](https://gitpod.io/#) or [gitpod.io/workspaces](https://gitpod.io/workspaces) and press Enter. This will take you to a list of workspaces that have been active within the past 14 days.
+* Search for the workspace you wish to work on and access the link to it that lies within the pathway https://gitpod.io/.
+* Sign in to the workspace each time with [gitpod.io/#](https://gitpod.io/#) using one of the listed providers (GitHub / GitLab / BitBucket) and let the workspace start up.
+* On navigating to the workspace for the first time, it may take a little while longer than normal to initially install all it needs. Be patient.
+* It is recommend that you install the GitPod browser extension to make this a one-click operation into the future.
 
 ## 7. Credits 
-
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
+* Primary and additional HTML, CSS and JavaScript coding was studied and reworked from modules provided through the Code Institute's [Diploma in Full Stack Software Development](https://codeinstitute.net/se/full-stack-software-development-diploma/), [W3 Schools](https://www.w3schools.com/), [Stack overflow](https://stackoverflow.com/), [mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [GeeksforGeeks](https://www.geeksforgeeks.org/). 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+Each of these included research and implementation of: 
+  * To [hide the up/down arrows styling](https://stackoverflow.com/questions/23372903/hide-up-down-arrow-buttons-spinner-in-input-number-firefox-29) of the number input fields for most browsers.
+    * in general - https://khaalipaper.com/html/remove-arrows-from-input-type-number.php.
+    * firefox bug fix - https://stackoverflow.com/questions/23372903/hide-up-down-arrow-buttons-spinner-in-input-number-firefox-29
+  
+  * [scope variables](https://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript/32573386#32573386)
+  * [screen sizes for casual games](https://www.digitalmarketnews.com/big-screen-gaming-vs-small-screen-gaming-the-pros-and-cons/)
+  * General place to start on coin animations - [foolishdevloper](https://www.foolishdeveloper.com/2021/10/coin-flip-game-using-javascript.html) and [css3](http://css3.bradshawenterprises.com/)
+  * Running script after animation has finished - [stackoverflow](https://stackoverflow.com/questions/50742142/run-js-script-after-css-animation-is-finished)
+  * Onclick event syntax - [freecodecamp](https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/)
+  * Creating a modal popup - [DZone](https://dzone.com/articles/4-ways-to-create-a-modal-popup-box-with-html-css-a)
+  * The screen size for mockups and responsiveness testing was sampled from [GBK Soft](https://gbksoft.com/blog/common-screen-sizes-for-responsive-web-design/) and based current resolutions typically found globally
+  * The text for the site was imported via google fonts as [Montserrat](https://fonts.google.com/specimen/Montserrat) by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly.
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+  * All koala images sourced from istockphoto user [sundatoon](https://www.istockphoto.com/se/search/stack/751462445?assettype=image).
+  * The surface for the heads side of the coin sourced from [What Ieight Today](https://whatieighttoday.blogspot.com/2017/02/20-latest-coin-drawing.html)
+  * The surface for the tails side of the coin sourced from [onlinecoin](https://onlinecoin.club/Coins/Country/Australia/One_Dollar_2019/)
+  * All icons sourced from [Font Awesome](https://fontawesome.com/)
