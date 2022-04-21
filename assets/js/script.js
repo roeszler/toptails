@@ -22,6 +22,15 @@ function decrementBank() {
    parseInt(bankAfter);
 }
 
+/**
+* increases the bank amount.
+*/
+function incrementBank() {
+   let bankAfter = document.getElementById('bank').value = ++bank;
+   
+   parseInt(bankAfter);
+}
+
 // ------ Game Engine Functions
 /**
 * Generates the spin result as a random number between 1 and 3
