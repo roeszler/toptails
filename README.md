@@ -34,12 +34,14 @@ Site link : https://roeszler.github.io/toptails/
     * [Issues and Resolutions](#issues--resolutions)
     * [Validator Testing](#validator-testing)
 6. [Deployment](#6-deployment)
+    * [Display Environment](#display-environment-github--gitlab--bitbucket)
+    * [Development Environment](#development-environment-gitpod)
 7. [Credits](#7-credits)
     * [Content](#content)
     * [Media](#media)
 ## 1. Project Purpose
 
-The TwoTails website was created as the second part of my project portfolio while styding the [Code Insitute's Full Stack Software Developer course](https://codeinstitute.net/se/full-stack-software-development-diploma/). It has been built from the ground up to extend myself and demonstrate the use of pure JavaScript (vanilla JavaScript), HTML and CSS employing User Centered Design. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. 
+The TwoTails website was created as the second part of my project portfolio while styling the [Code Insitute's Full Stack Software Developer course](https://codeinstitute.net/se/full-stack-software-development-diploma/). It has been built from the ground up to extend myself and demonstrate the use of pure JavaScript (vanilla JavaScript), HTML and CSS employing User Centred Design. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. 
 
 TopTails is a fully responsive game that allows users to bet, choose and chance their luck at winning against a virtual opponent (Kev the Koala) and beating him to 500 points.  
 
@@ -49,25 +51,25 @@ TopTails is a fully responsive game that allows users to bet, choose and chance 
 
 TopTails TwoUp (or TopTails for short) is a site that hopes to convey a variation of the iconic and traditional Australian gambling game 'Two-up' and the rich history that it surrounds. 
 
-As a game of chance, TopTails allows users to betting on the outcome of two pennies 'virtually thrown' in the air. Typically played in conjunction with the Australian national remeberance of the [ANZAC spirit](https://en.wikipedia.org/wiki/Anzac_Day), it also represents a game often played at a period of time Australia first displayed itself as distinctly separate nation on the global stage. You may read more about this [here](https://en.wikipedia.org/wiki/Two-up) (Hold CTRL to open in new tab).
+As a game of chance, TopTails allows users to betting on the outcome of two pennies 'virtually thrown' in the air. Typically played in conjunction with the Australian national remembrance of the [ANZAC spirit](https://en.wikipedia.org/wiki/Anzac_Day), it also represents a game often played at a period of time Australia first displayed itself as distinctly separate nation on the global stage. You may read more about this [here](https://en.wikipedia.org/wiki/Two-up) (Hold CTRL to open in new tab).
 ### User Stories
 #### First Time Visitors
 * As a first time user, I wan't to quickly understand the purpose of the site.
 * As a first time user, I wan't to understand the rules of the game.
 * As a first time user, I wan't to understand how the game is ended.
 * As a first time user, I wan't to identify that it is a game of chance.
-* As a first time user, I wan't to be able to selcet chioces in a simple and intuitive way.
-* As a first time user, I wan't to inititate the game play in a simple and intutive way.
+* As a first time user, I wan't to be able to select choices in a simple and intuitive way.
+* As a first time user, I wan't to initiate the game play in a simple and intuitive way.
 * As a first time user, I wan't the game to require interaction with me.
 * As a first time user, I wan't ways to learn more about the author, topic and history surrounding the game.
 * As a first time user, I wan't ways to refer the game to my friends.
 #### Returning Visitors
-* As a returning user, I wan't to try to beat the computersied opponent (Kev the Koala) to 500 points without breaking the bank.
+* As a returning user, I wan't to try to beat the computerised opponent (Kev the Koala) to 500 points without breaking the bank.
 * As a returning user, I wan't to engage with [game theory](https://en.wikipedia.org/wiki/Game_theory) as a pastime to beat a virtual opponent.
 
 #### Coding Colleagues
 * As a fellow code writing user, I wan't to see how the java script has been written and operates.
-* As a fellow code writing user, I wan't to be abel to contact the author.
+* As a fellow code writing user, I wan't to be able to contact the author.
 ### Design
 
   The site is intended to convey items commonly used in close association to the Australian land, lifestyle and culture.
@@ -75,10 +77,10 @@ As a game of chance, TopTails allows users to betting on the outcome of two penn
 
   Australia is commonly associated with the Kangaroo, the Emu (found on its [coat of arms](https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia)) and the Koala in [popular culture](https://www.australiangeographic.com.au/topics/wildlife/2014/08/australias-animal-fauna-emblems/).
 
-  A deliberate focus on the imagery of TopTails is to convey a fun, light and intuetively warming experience to the user. On search of appropriately available imagry, the Koala was chosen based on its often infered 'cuddly' nature. From here, Kevin the Koala was chasen as a name for the opponenet, as it attaches to the site imagery and natural alliteration that occurs from its name.
+  A deliberate focus on the imagery of TopTails is to convey a fun, light and intuitively warming experience to the user. On search of appropriately available imagery, the Koala was chosen based on its often inferred 'cuddly' nature. From here, Kevin the Koala was chosen as a name for the opponent, as it attaches to the site imagery and natural alliteration that occurs from its name.
 
 #### Fonts
-Typography was evaluated in line with the sitestyle aiming for a the easy to read, recreational visitor.
+Typography was evaluated in line with the site style aiming for a the easy to read, recreational visitor.
 * Bold, fun and slightly quirky main headings
 * Smooth easy to read content 
 * Excellent contrast 
@@ -97,7 +99,7 @@ Evaluation based on contrast, easy of reading, and shapes that compliment the Au
 
 #### Color Scheme
 
-Based on providing visual depth and variety of events to the game user, the following color pallette has been chosen surrounding the green seen in the [Austalain national colors](https://en.wikipedia.org/wiki/National_colours_of_Australia), bright yellow and flag blue: 
+Based on providing visual depth and variety of events to the game user, the following color palette has been chosen surrounding the green seen in the [Australian national colours](https://en.wikipedia.org/wiki/National_colours_of_Australia), bright yellow and flag blue: 
 
 | Primary Color Palette | Hexadecimal Value | RGBA Value  |
 | - |:-:| -:|
@@ -136,15 +138,15 @@ In this section, you should go over the different parts of your project, and des
   * This is the main interaction portion of the site. 
   * It contains all sections contained within the body; Heading, Game Area, Score Area and Footer.
   * As an alternative to using `alert()` functions, I have coded functions to simultaneously display events as a [popup](#popups)) and hide the game area. 
-    * This has been done to mantain interactivity accross mobile devices and browsers that often block traditional `alert()` style events.
-  * The game area holds the multiple points of interaction discussed under the headings follwing.
-  * It is bound by a subte green coloration to deliniate the focal points of gameplay and intuitively indicate to the user where to interact with the site.
-  * It maintains the prinmary green / yellow color scheme commonly seen in [Australian sports](https://en.wikipedia.org/wiki/National_colours_of_Australia).
+    * This has been done to maintain interactivity across mobile devices and browsers that often block traditional `alert()` style events.
+  * The game area holds the multiple points of interaction discussed under the headings underneath.
+  * It is bound by a subtle green coloration to delineate the focal points of gameplay and intuitively indicate to the user where to interact with the site.
+  * It maintains the primary green / yellow color scheme commonly seen in [Australian sports](https://en.wikipedia.org/wiki/National_colours_of_Australia).
   * It also helps the user eye to focus, and is replaced in the exact dimensions with game events ([popups](#popups)).
   * It attends to user stories:
-    > As a first time user, I wan't to be able to selcet chioces in a simple and intuitive way.
+    > As a first time user, I wan't to be able to select choices in a simple and intuitive way.
     
-    > As a first time user, I wan't to inititate the game play in a simple and intutive way.
+    > As a first time user, I wan't to initiate the game play in a simple and intuitive way.
     
     > As a first time user, I wan't the game to require interaction with me.
     
@@ -155,10 +157,10 @@ In this section, you should go over the different parts of your project, and des
 #### Bet Amount Area
 ![Bet Amount Area](assets/images/betAmountArea.webp)
   * This section is the first point of user interaction.
-  * Allows user to increment / decrement the bet amount that simultaneously decreases / icreases the bank area seen as 'Your Bank'.
+  * Allows user to increment / decrement the bet amount that simultaneously decreases / increases the bank area seen as 'Your Bank'.
   * Creates a sense of risk vs reward that is vital for making chance games fun and even compelling.
   * It has been created as an `<input type="number">` tag without the usual increase/decrease arrows that associate with this input. 
-    * Althogh not conventional, the use of the 'unstyled' input button has permitted :
+    * Although not conventional, the use of the 'un-styled' input button has permitted :
       * Logging of amounts to console, 
       * Direct user input (if so desired),
       * Event listener on the DOMContentLoaded event that fundamentally controls the game, 
@@ -168,22 +170,22 @@ In this section, you should go over the different parts of your project, and des
 
       * Used as a base to calculate win / loss amounts should user selection equal the combination spun.
 
-  * The ability for the user to choose the wadger attends to user stories:
-    > As a returning user, I wan't to try to beat the computersied opponent (Kev the Koala) to 500 points without breaking the bank.
+  * The ability for the user to choose the wager attends to user stories:
+    > As a returning user, I wan't to try to beat the computerised opponent (Kev the Koala) to 500 points without breaking the bank.
     
     > As a returning user, I wan't to engage with [game theory](https://en.wikipedia.org/wiki/Game_theory) as a pastime to beat a virtual opponent.
 
     > As a fellow code writing user, I wan't to see how the java script has been written and operates.
 
 #### Bet Type Area
-This area is where the user indicates their choice as to wich they wish to bet the amount to be wadgered against. Three buttons indicating a choice of HH (Head Head), HT (Head Tails) or TT (Tail Tail) will be spun.
+This area is where the user indicates their choice as to which they wish to bet the amount to be wagered against. Three buttons indicating a choice of HH (Head Head), HT (Head Tails) or TT (Tail Tail) will be spun.
 
 Each button has three states:
 
 1. The Inactive State :
 
 ![Bet Type Area Inactive](assets/images/betTypeInactive.webp)
-  * This is the intial state of the buttons, where each option is inactive.
+  * This is the initial state of the buttons, where each option is inactive.
   * In this state the spin button is in a disabled state and the game cannot continue until an option is selected.
   * Interaction can occur with mouse hover or click.
 
@@ -199,30 +201,30 @@ Each button has three states:
 
 ![Bet Type Area](assets/images/betTypeActive.webp)
 
-* This follws an 'on mouse click' user interaction.
+* This follows an 'on mouse click' user interaction.
 * The user action enlarges the button, changes the color of the text and background and internal icon from two coin stacks to a double check symbol, subtley rewarding the user for their interaction.
 * The state remains active until the user either clicks on another bet choice button or the overall game is ended / won.
-  * This remain active state has been coded to allow improved user interaction and automation, promting game flow when repeating the spin function.
+  * This remain active state has been coded to allow improved user interaction and automation, promoting game flow when repeating the spin function.
 * An active status also `enables` the spin button to change from a disabled state to a 'clickable' enabled state, promoting the game to continue.
 
 #### Spin Button
-A close look at the game area from the words 'Bet Amount' to the 'Spin' button, you will see a gradual increase in the font size, boldness and bright coloring. This 'pyramidal styling' has been deliberate, with the intention to draw the eye and lead the user intuitively to the object of the game... to spin the button.
+A close look at the game area from the words 'Bet Amount' to the 'Spin' button, you will see a gradual increase in the font size, boldness and bright colouring. This 'pyramidal styling' has been deliberate, with the intention to draw the eye and lead the user intuitively to the object of the game... to spin the button.
 
 ![The Spin Pyramid](assets/images/spinPyramid.webp)
 
 * As mentioned above, the spin button is enabled only when a bet choice has been made
-* The spin button enabled state is bright, exellent contrast and in recognisably Australian colors.
+* The spin button enabled state is bright, excellent contrast and in recognisably Australian colours.
 * The button width takes up 50% of the desktop / tablet area to 95% width on mobile devices.
-* The position at the lower 3/4 sectiom of the screen is intended to promote ease pf gameplay, particularly on mobile devices with thumb interation.
+* The position at the lower 3/4 section of the screen is intended to promote ease pf gameplay, particularly on mobile devices with thumb interaction.
 
 #### Score & Bank Balance Area
 ![The Spin Pyramid](assets/images/scoreBankArea.webp)
 
 * The values in this area change with user bet amount interaction, game wins and losses.
-* The colors chosen (red for Kev, green for the User) are to further promote a sense of what the user want's to occur (an increase in green) and avoid what they don't want to occur (an increase in red).
+* The colours chosen (red for Kev, green for the User) are to further promote a sense of what the user want's to occur (an increase in green) and avoid what they don't want to occur (an increase in red).
 * The icon imagery has been selected to further conveys meaning of what each score relates; cash register for computer taking the points and a piggy bank for the user banking the points.
 * Text format selected to convey a sense of accounting and/or recording of official numerical data.
-* The layout of this area also provides a quick reference and reinforcement to the objectiveof the game; get to 500 points before Kev the Koala does!
+* The layout of this area also provides a quick reference and reinforcement to the objective of the game; get to 500 points before Kev the Koala does!
 
 #### Footer
 ![Footer](assets/images/footer.webp)
@@ -231,12 +233,12 @@ A close look at the game area from the words 'Bet Amount' to the 'Spin' button, 
 #### PopUps
 As discussed in the [game area](#game-area) section, an alternative to using `alert()` functions has been used. The supporting code simultaneously removes and displays sections to convey major game events to the user. 
 
-These functions appear and are termed as a 'popups' accorss the site, they function more as a change of visibility in the HTML. This has been done as a way to not-be-limited by potential browser settings that block traditional popups.
+These functions appear and are termed as a 'popups' across the site, they function more as a change of visibility in the HTML. This has been done as a way to not-be-limited by potential browser settings that block traditional popups.
 
 There are a total of ten (10) of these change of state 'popups' across the site: 
-* [Gameplay](assets/images/gamePlay.webp) - indicates the rules and gameplay of TopTails. Lets play button.
+* [Gameplay](assets/images/gamePlay.webp) - indicates the rules and gameplay of TopTails. Let’s play button.
 * [Winner](assets/images/winnerPopup.webp) - in the event of a win each turn. It details a win message and how many points have been won on the amount wagered. Australian green and yellow coloring. Bank points button.
-* [Looser](assets/images/looserPopup.webp) - in the event of a loss each turn. Simple non-complementary primary colors. Return to game button.
+* [Looser](assets/images/looserPopup.webp) - in the event of a loss each turn. Simple non-complementary primary colours. Return to game button.
 * [Game Over](assets/images/gameOverPopup.webp) - in the event of zero funds and bet amount, or when Kev reaches 500 points before the user. 
 * [Game Win Final](assets/images/gameWinFinal.webp) - in the event of user reaching 500 points. Australian flag blue and white with celebrating koala image. Share with friends on social media button.
 * [Out of money](assets/images/outOfMoney.webp) - in the event the user tries to increment the bet more than the amount they have in the bank. Notifies that the bank is empty. 
@@ -244,16 +246,16 @@ There are a total of ten (10) of these change of state 'popups' across the site:
   * Head Head - results in two heads turning up.
   * Head Tail - results in one head plus one tail turning up.
   * Tail Tail - results in two tails turning up.
-* [Error Event](assets/images/error.webp) - in the event that a NaN input occurs or another unidentifed error occurs.
+* [Error Event](assets/images/error.webp) - in the event that a NaN input occurs or another un-identifed error occurs.
 
 #### Choice HTML
 This is a hidden section within the body of the `HTML` used to pivot data and log bet choices at any given turn. Never seen by the user as `style.display: none;`, it is used in the functions to select, re-select and sticky select between turns.
 ### Possible Future Features
-* Resollve the larger `eventListeners` + `if` / `else` functions into `switch()` / `case` function.
+* Resolve the larger `eventListeners` + `if` / `else` functions into `switch()` / `case` function.
 * Include levels play, with increasing difficulty levels.
-* Re-style for annual events (ie Christmas, St Patricks Day, Remeberance Day, ANZAC Day, Australia Day)
+* Re-style for annual events (ie Christmas, St Patricks Day, Remembrance Day, ANZAC Day, Australia Day)
 * Refinement of game probability model away from 1 in 3 to 1 in 4, and subsequent adjustment of the odds for each.
-* The game itself to further refinement and devlopment into a live version.
+* The game itself to further refinement and development into a live version.
   * Possibly a purchasable credits system,
   * Connection to and from live financial accounts,
   * Change the game end upper limit to a cash-out scenario.
@@ -286,7 +288,7 @@ The skillsets used in the creation and review of this project are based around a
   * A free online photo editor that allows you to create &/or manipulate images for use in projects.
 
 ### Supported Screens and Browsers
-Toptails is designed to be a casual, relatively simple game of chance that is coded simply at it's current iteration. Considering this, the primary medium for gameplay is predicted to be on mobile devices.
+TopTails is designed to be a casual, relatively simple game of chance that is coded simply at its current iteration. Considering this, the primary medium for gameplay is predicted to be on mobile devices.
 
 Testing was performed on a mix of screen sizes currently seen in the global marketplace sourced from [GBK soft research](https://gbksoft.com/blog/common-screen-sizes-for-responsive-web-design/) between January 2020 to January 2021.
 
@@ -311,9 +313,9 @@ The site has been tested on each of the following popular browsers to check for 
   * [Gameplay](assets/images/gamePlay.webp) and [design](#design) structure.
 * As a first time user, I wan't to identify that it is a game of chance.
   * [Spin Button](#spin-button) and [Coin animations](assets/images/coinFlip.webp) popup functioning correctly attends to this. 
-* As a first time user, I wan't to be able to selcet chioces in a simple and intuitive way.
+* As a first time user, I wan't to be able to select choices in a simple and intuitive way.
   * [Bet Type](#bet-type-area) and [Bet Amount](#bet-amount-area) areas functioning correctly attend to this.
-* As a first time user, I wan't to inititate the game play in a simple and intutive way.
+* As a first time user, I wan't to initiate the game play in a simple and intuitive way.
   * [Spin Button](#spin-button) functioning correctly attends to this.
 * As a first time user, I wan't the game to require interaction with me.
   * [Bet Amount](#bet-amount-area), [Spin Button](#spin-button), all [popups](#popups), [Bet Select](#bet-type-area) and [footer](#footer) links functioning correctly, attend to this.
@@ -322,23 +324,23 @@ The site has been tested on each of the following popular browsers to check for 
 * As a first time user, I wan't ways to refer the game to my friends.
   * [Game Over](assets/images/gameOverPopup.webp) functions correctly and is attend to this.
 #### Returning Visitors
-* As a returning user, I wan't to try to beat the computersied opponent (Kev the Koala) to 500 points without breaking the bank.
+* As a returning user, I wan't to try to beat the computerised opponent (Kev the Koala) to 500 points without breaking the bank.
   * [Game Structure](assets/images/gameArea.webp) functioning correctly attends to this.
 * As a returning user, I wan't to engage with [game theory](https://en.wikipedia.org/wiki/Game_theory) as a pastime to beat a virtual opponent.
   * [Game Structure](assets/images/gameArea.webp) functioning correctly attends to this.
 
 #### Coding Colleagues
 * As a fellow code writing user, I wan't to see how the java script has been written and operates.
-  * Site listed publically at authors [GitHub](https://github.com/roeszler/toptails) repository - https://github.com/roeszler/toptails
-* As a fellow code writing user, I wan't to be abel to contact the author.
+  * Site listed publicly at authors [GitHub](https://github.com/roeszler/toptails) repository - https://github.com/roeszler/toptails
+* As a fellow code writing user, I wan't to be able to contact the author.
   * See authors [GitHub](https://github.com/roeszler) profile seen at the [footer](#footer) section.
 
 ### Issues & Resolutions
 
 * Hide Up & Down Arrow Buttons (Spinner) in Input Number - [Firefox](https://stackoverflow.com/questions/23372903/hide-up-down-arrow-buttons-spinner-in-input-number-firefox-29) with `input[type=number] { -moz-appearance: textfield; }`.
-* Images not displaying on all browsers using the realtive file path annotation `../`. Removed annoation. Functioning correctly.
+* Images not displaying on all browsers using the relative file path annotation `../`. Removed annotation. Functioning correctly.
 * Event listener code at lines 443 and 505 reference outer scoped variables. See [JS Hint warnings](#one-warning).
-* JSHint validation indicates that there are 13 unsued functions. See [Unused variables](#13-unused-variables).
+* JSHint validation indicates that there are 13 unused functions. See [Unused variables](#13-unused-variables).
 * Correct event listener for animation re-running `calculateWinLoss();`and `generateSpinResult();` twice.
 * Include `changeSpinActive();` function to betType buttons
 * Code bank to not progress past zero: `} else if (bank > 0) {`.
@@ -381,15 +383,14 @@ The site has been tested on each of the following popular browsers to check for 
     * resetSpin();
     * errorOk();
     
-    JSHint validation indicates that there are 13 unsued functions. I have created each of these functions to sit within their relative HTML element and allow user events to activate them and control numerous functions to occur. I have decided to allow the unused variables notification to remain in exchange for the functionality it permits.
+    JSHint validation indicates that there are 13 unused functions. I have created each of these functions to sit within their relative HTML element and allow user events to activate them and control numerous functions to occur. I have decided to allow the unused variables notification to remain in exchange for the functionality it permits.
 
 * Accessibility
-  * I confirmed that the colors, contrast and fonts chosen are easy to read and accessible by running it through [lighthouse](https://developers.google.com/web/tools/lighthouse/) in dev tools.
+  * I confirmed that the colours, contrast and fonts chosen are easy to read and accessible by running it through [lighthouse](https://developers.google.com/web/tools/lighthouse/) in dev tools.
 
   ![Accessibility Pic]()
 
 ## 6. Deployment
-
 ### Display Environment (GitHub / GitLab / BitBucket)
 The site has been deployed to GitHub pages. The steps to deploy are as follows: 
   - Create / open an existing repository for the project with the name of your choice on your GitHub, GitLab or Bitbucket account page.
