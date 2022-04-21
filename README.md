@@ -46,7 +46,7 @@ The TwoTails website was created as the second part of my project portfolio whil
 
 TopTails is a fully responsive game that allows users to bet, choose and chance their luck at winning against a virtual opponent (Kev the Koala) and beating him to 500 points.  
 
-![AMI Responsive Design Mockup](assets/images/TopTails-responsive.webp)
+![AMI Responsive Design Mockup](docs/assets/images/TopTails-responsive.webp)
 
 ## 2. User Experience Design
 
@@ -121,9 +121,9 @@ Based on providing visual depth and variety of events to the game user, the foll
 
 The feel and function of the wireframes is the initial framework of the site. It is intended to show stakeholders and potential clients early concepts before any coding started.
 
-Contained as [TopTails Wireframe.pdf](assets/images/TopTailsWireframe.pdf) documentation is a visualisation of the layout and simple colouring intended for the site.
+Contained in the [TopTails Wireframe.pdf](docs/assets/images/TopTailsWireframe.pdf) document is a visualisation of the layout and simple colouring intended for the site.
 
-The wireframes are intended to convey :
+The wireframe are intended to convey :
 - An indication of the various elements and positions of these in relation to each other.
 - The actions / content that gets priority via it's location on the screen, actions, animations and embedded interactivity.
 - What is encountered at different stages of the site.
@@ -146,7 +146,7 @@ In this section, you should go over the different parts of your project, and des
   * It intuitively indicates that a new game has commenced.
   * It provides encouragement to the user to start / restart the game. 
 
-![Rules popup](assets/images/gamePlay.webp)
+![Rules popup](docs/assets/images/gamePlay.webp)
   
 #### Game Area
   * This is the main interaction portion of the site. 
@@ -166,10 +166,10 @@ In this section, you should go over the different parts of your project, and des
     
     > As a first time user, I wan't to understand how the game is ended.
 
-![Game Area](assets/images/gameArea.webp)
+![Game Area](docs/assets/images/gameArea.webp)
 
 #### Bet Amount Area
-![Bet Amount Area](assets/images/betAmountArea.webp)
+![Bet Amount Area](docs/assets/images/betAmountArea.webp)
   * This section is the first point of user interaction.
   * Allows user to increment / decrement the bet amount that simultaneously decreases / increases the bank area seen as 'Your Bank'.
   * Creates a sense of risk vs reward that is vital for making chance games fun and even compelling.
@@ -180,7 +180,7 @@ In this section, you should go over the different parts of your project, and des
       * Event listener on the DOMContentLoaded event that fundamentally controls the game, 
       * Simultaneous decreasing of a similar `<input>` tag the Bank Area; 
       
-      ![Bank Area](assets/images/bankArea.webp)
+      ![Bank Area](docs/assets/images/bankArea.webp)
 
       * Used as a base to calculate win / loss amounts should user selection equal the combination spun.
 
@@ -198,14 +198,14 @@ Each button has three states:
 
 1. The Inactive State :
 
-![Bet Type Area Inactive](assets/images/betTypeInactive.webp)
+![Bet Type Area Inactive](docs/assets/images/betTypeInactive.webp)
   * This is the initial state of the buttons, where each option is inactive.
   * In this state the spin button is in a disabled state and the game cannot continue until an option is selected.
   * Interaction can occur with mouse hover or click.
 
 2. The Hover State :
 
-![Bet Type Area Hover](assets/images/betTypeHover.webp)
+![Bet Type Area Hover](docs/assets/images/betTypeHover.webp)
 
 * This is the first interactive state of the buttons.
 * The user performing a 'mouse over' action each option will enlarge and change color, indicating interactivity and intuitively prompting the user to do something.
@@ -213,7 +213,7 @@ Each button has three states:
 
 3. The Active State
 
-![Bet Type Area](assets/images/betTypeActive.webp)
+![Bet Type Area](docs/assets/images/betTypeActive.webp)
 
 * This follows an 'on mouse click' user interaction.
 * The user action enlarges the button, changes the color of the text and background and internal icon from two coin stacks to a double check symbol, subtley rewarding the user for their interaction.
@@ -224,7 +224,7 @@ Each button has three states:
 #### Spin Button
 A close look at the game area from the words 'Bet Amount' to the 'Spin' button, you will see a gradual increase in the font size, boldness and bright colouring. This 'pyramidal styling' has been deliberate, with the intention to draw the eye and lead the user intuitively to the object of the game... to spin the button.
 
-![The Spin Pyramid](assets/images/spinPyramid.webp)
+![The Spin Pyramid](docs/assets/images/spinPyramid.webp)
 
 * As mentioned above, the spin button is enabled only when a bet choice has been made
 * The spin button enabled state is bright, excellent contrast and in recognisably Australian colours.
@@ -232,7 +232,7 @@ A close look at the game area from the words 'Bet Amount' to the 'Spin' button, 
 * The position at the lower 3/4 section of the screen is intended to promote ease pf gameplay, particularly on mobile devices with thumb interaction.
 
 #### Score & Bank Balance Area
-![The Spin Pyramid](assets/images/scoreBankArea.webp)
+![The Spin Pyramid](docs/assets/images/scoreBankArea.webp)
 
 * The values in this area change with user bet amount interaction, game wins and losses.
 * The colours chosen (red for Kev, green for the User) are to further promote a sense of what the user want's to occur (an increase in green) and avoid what they don't want to occur (an increase in red).
@@ -241,7 +241,7 @@ A close look at the game area from the words 'Bet Amount' to the 'Spin' button, 
 * The layout of this area also provides a quick reference and reinforcement to the objective of the game; get to 500 points before Kev the Koala does!
 
 #### Footer
-![Footer](assets/images/footer.webp)
+![Footer](docs/assets/images/footer.webp)
 * Providing a link to the splash page gameplay information and educational links to history of Two Up and the Australian culture surrounding it.
 
 #### PopUps
@@ -250,17 +250,17 @@ As discussed in the [game area](#game-area) section, an alternative to using `al
 These functions appear and are termed as a 'popups' across the site, they function more as a change of visibility in the HTML. This has been done as a way to not-be-limited by potential browser settings that block traditional popups.
 
 There are a total of ten (10) of these change of state 'popups' across the site: 
-* [Gameplay](assets/images/gamePlay.webp) - indicates the rules and gameplay of TopTails. Let’s play button.
-* [Winner](assets/images/winnerPopup.webp) - in the event of a win each turn. It details a win message and how many points have been won on the amount wagered. Australian green and yellow coloring. Bank points button.
-* [Looser](assets/images/looserPopup.webp) - in the event of a loss each turn. Simple non-complementary primary colours. Return to game button.
-* [Game Over](assets/images/gameOverPopup.webp) - in the event of zero funds and bet amount, or when Kev reaches 500 points before the user. 
-* [Game Win Final](assets/images/gameWinFinal.webp) - in the event of user reaching 500 points. Australian flag blue and white with celebrating koala image. Share with friends on social media button.
-* [Out of money](assets/images/outOfMoney.webp) - in the event the user tries to increment the bet more than the amount they have in the bank. Notifies that the bank is empty. 
-* [Coin animations](assets/images/coinFlip.webp) - animation displayed for 3s at the spin event.
+* [Gameplay](docs/assets/images/gamePlay.webp) - indicates the rules and gameplay of TopTails. Let’s play button.
+* [Winner](docs/assets/images/winnerPopup.webp) - in the event of a win each turn. It details a win message and how many points have been won on the amount wagered. Australian green and yellow coloring. Bank points button.
+* [Looser](docs/assets/images/looserPopup.webp) - in the event of a loss each turn. Simple non-complementary primary colours. Return to game button.
+* [Game Over](docs/assets/images/gameOverPopup.webp) - in the event of zero funds and bet amount, or when Kev reaches 500 points before the user. 
+* [Game Win Final](docs/assets/images/gameWinFinal.webp) - in the event of user reaching 500 points. Australian flag blue and white with celebrating koala image. Share with friends on social media button.
+* [Out of money](docs/assets/images/outOfMoney.webp) - in the event the user tries to increment the bet more than the amount they have in the bank. Notifies that the bank is empty. 
+* [Coin animations](docs/assets/images/coinFlip.webp) - animation displayed for 3s at the spin event.
   * Head Head - results in two heads turning up.
   * Head Tail - results in one head plus one tail turning up.
   * Tail Tail - results in two tails turning up.
-* [Error Event](assets/images/error.webp) - in the event that a NaN input occurs or another un-identifed error occurs.
+* [Error Event](docs/assets/images/error.webp) - in the event that a NaN input occurs or another un-identifed error occurs.
 
 #### Choice HTML
 This is a hidden section within the body of the `HTML` used to pivot data and log bet choices at any given turn. Never seen by the user as `style.display: none;`, it is used in the functions to select, re-select and sticky select between turns.
@@ -319,14 +319,14 @@ The site has been tested on each of the following popular browsers to check for 
 ## 5. Testing 
 #### First Time Visitors
 * As a first time user, I wan't to quickly understand the purpose of the site.
-  * [Gameplay](assets/images/gamePlay.webp) popup functioning correctly attends to this.
+  * [Gameplay](docs/assets/images/gamePlay.webp) popup functioning correctly attends to this.
 * As a first time user, I wan't to understand the rules of the game.
-  * [Gameplay](assets/images/gamePlay.webp) popup functioning correctly attends to this.
+  * [Gameplay](docs/assets/images/gamePlay.webp) popup functioning correctly attends to this.
   * Intuitive structure of the layout and [design](#design).
 * As a first time user, I wan't to understand how the game is ended.
-  * [Gameplay](assets/images/gamePlay.webp) and [design](#design) structure.
+  * [Gameplay](docs/assets/images/gamePlay.webp) and [design](#design) structure.
 * As a first time user, I wan't to identify that it is a game of chance.
-  * [Spin Button](#spin-button) and [Coin animations](assets/images/coinFlip.webp) popup functioning correctly attends to this. 
+  * [Spin Button](#spin-button) and [Coin animations](docs/assets/images/coinFlip.webp) popup functioning correctly attends to this. 
 * As a first time user, I wan't to be able to select choices in a simple and intuitive way.
   * [Bet Type](#bet-type-area) and [Bet Amount](#bet-amount-area) areas functioning correctly attend to this.
 * As a first time user, I wan't to initiate the game play in a simple and intuitive way.
@@ -334,14 +334,14 @@ The site has been tested on each of the following popular browsers to check for 
 * As a first time user, I wan't the game to require interaction with me.
   * [Bet Amount](#bet-amount-area), [Spin Button](#spin-button), all [popups](#popups), [Bet Select](#bet-type-area) and [footer](#footer) links functioning correctly, attend to this.
 * As a first time user, I wan't ways to learn more about the author, topic and history surrounding the game.
-  * [Game Over](assets/images/gameOverPopup.webp) button and [footer](#footer) links functioning correctly attend to this.
+  * [Game Over](docs/assets/images/gameOverPopup.webp) button and [footer](#footer) links functioning correctly attend to this.
 * As a first time user, I wan't ways to refer the game to my friends.
-  * [Game Over](assets/images/gameOverPopup.webp) functions correctly and is attend to this.
+  * [Game Over](docs/assets/images/gameOverPopup.webp) functions correctly and is attend to this.
 #### Returning Visitors
 * As a returning user, I wan't to try to beat the computerised opponent (Kev the Koala) to 500 points without breaking the bank.
-  * [Game Structure](assets/images/gameArea.webp) functioning correctly attends to this.
+  * [Game Structure](docs/assets/images/gameArea.webp) functioning correctly attends to this.
 * As a returning user, I wan't to engage with [game theory](https://en.wikipedia.org/wiki/Game_theory) as a pastime to beat a virtual opponent.
-  * [Game Structure](assets/images/gameArea.webp) functioning correctly attends to this.
+  * [Game Structure](docs/assets/images/gameArea.webp) functioning correctly attends to this.
 
 #### Coding Colleagues
 * As a fellow code writing user, I wan't to see how the java script has been written and operates.
