@@ -538,3 +538,29 @@ hhCoinEnd.addEventListener("animationend", function() {
         calculateWinLoss();
     }
 });
+
+htCoinEnd.addEventListener("animationend", function() {
+    let spinResult = document.getElementById('spinResult').value;
+    userChoice = document.getElementById('userChoice').value;
+    
+    if (parseInt(spinResult) === 2 && parseInt(userChoice) === 2) {
+        winnerRender();
+        incrementWinPoints2();
+        calculateWinLoss();
+    } else {
+        calculateWinLoss();
+    }
+});
+
+ttCoinEnd.addEventListener("animationend", function() {
+    let spinResult = document.getElementById('spinResult').value;
+    userChoice = document.getElementById('userChoice').value;
+
+    if (parseInt(spinResult) === 3 && parseInt(userChoice) === 3) {
+        winnerRender();
+        incrementWinPoints4();
+        calculateWinLoss();
+    } else {
+        calculateWinLoss();
+    }
+});
