@@ -311,6 +311,22 @@ footer > button:hover {
 }
 
 /* ------ Kev Wins Alert Modal */
+#lossPopup {
+    display: none;
+}
+
+#lossPopup h2 {
+    font-size: 3.5rem;
+}
+
+#lossPopup i {
+    color: #FF0000;
+    padding: 3rem 1rem 0;
+}
+
+#lossBtn {
+    margin-top: 2rem;
+}
 
 /* ------ Game Over Modal */
 
