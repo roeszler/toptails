@@ -100,7 +100,23 @@ function gameOverOk() {
     document.getElementById('gameplayPopup').style.display = 'none';
  }
 
- 
+// Out of money function 
+ /**
+* Display gameOverPopup section & hide game-area section
+*/
+function outOfMoneyRender() {
+    document.getElementById('outOfMoneyPopup').style.display = 'block';
+    document.getElementById('game-area').style.display = 'none';
+    document.getElementById('gameplayPopup').style.display = 'none';
+ }
+ /**
+ * Display game-area section & hide gameOverPopup section
+ */
+ function outOfMoneyOk() {
+    document.getElementById('outOfMoneyPopup').style.display = 'none';
+    document.getElementById('game-area').style.display = 'block';
+    document.getElementById('gameplayPopup').style.display = 'none';
+ }
 
 // ------ DOM Listeners
 // Window: DOMContentLoaded events
