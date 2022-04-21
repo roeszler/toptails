@@ -653,3 +653,118 @@ footer > button:hover {
 }
 
 /* ------ Media Queries */
+
+@media only screen and (max-width: 768px) {
+    body {
+        height: 100%;
+    }
+    body h1 {
+        font-size: 2rem;
+        display: block;
+        width: 35%;
+        /* padding: 0 0 1rem 2rem; */
+    }
+
+    .heading {
+        width: 100%;
+        padding: 0;
+    }
+
+    .logo {
+        height: 5rem;
+        padding: 1rem;
+        display: inline;
+    }
+
+    .popUp {
+        width: 95%;
+        height: 95%;
+        text-align: center;
+    }
+
+    .popUp h2 {
+        display: block;
+        padding-left: 0;
+        width: 100%;
+        font-size: 3.5rem;
+    }
+
+    .coinPopUp {
+        padding-top: 1rem;
+    }
+
+    #gameplayPopup p, #gameplayPopup ul {
+        font-size: 0.85rem;
+        margin: 0 1rem;
+        padding-left: 0;
+        padding-bottom: 1.5rem;
+    }
+
+    #gameplayPopup ul {
+        text-align: left;
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+
+    #game-area {
+        width: 95%;
+        height: auto;
+        border-radius: 1rem 1rem 2rem 2rem;
+    }
+
+    #game-area h2 {
+        display: inline-block;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .amount-area {
+        width: auto;
+    }
+
+    .bet-area button {
+        border-radius: 50%;
+        margin: 0.1rem 0 1rem;
+        text-align: center;
+    }
+
+    .popupBtn {
+        width: 95%;
+    }
+
+    .btn--spin {
+        width: 100%;
+        height: 7rem;
+    }
+
+    .scores {
+        font-size: 0.85rem;
+        display: block;
+        position: sticky;
+        bottom: auto;
+    }
+
+    .scores .fas {
+        display: none;
+    }
+
+    #playAgain {
+        margin-bottom: 0.5rem;
+    }
+
+    #spender {
+        font-size: 3.5rem;
+        padding: none;
+        width: 100%;
+        margin-top: 0rem;
+    }
+
+    #outOfMoneyPopup h2 {
+        font-size: 2.5rem;
+    }
+
+    #testSection {
+        display: none;
+    }
+}
