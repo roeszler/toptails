@@ -70,11 +70,38 @@ button:hover {
 
 /* ------ Logo */
 .logo {
-    height: 9em;
+    height: 7em;
     padding: 1em 0;
 }
 
 /* ------ Game area */
+#game-area {
+    background-color: #00843D0D;
+    box-sizing: border-box;
+    width: 85%;
+    height: 75vh;
+    max-height: 480px;
+    max-width: 1024px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: none;
+}
+
+#game-area h2 {
+    color: #000;
+    /* font-weight: 400; */
+    font-size: 1.5rem;
+}
+
+.amount-area {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.amount-area p {
+    margin-bottom: 0px;
+}
 
 /* ------ betAmount Buttons */
 
