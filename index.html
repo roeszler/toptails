@@ -45,11 +45,27 @@
         <button id="spin" data-type="spin" class="btn btn--spin" aria-label="Spin Button" disabled>Spin</button>
     </section>
 
+    <!-- Alternate Sections -->
+    <!-- Winner Alert Modal -->
+    <!-- Kev Wins Alert Modal -->
+    <!-- Game Over Modal -->
+    <!-- Game Win Final Modal -->
+    <!-- Out of Money Modal -->
+    <!-- Gameplay Modal -->
+    <!-- HH Coin Toss Animation section -->
+    <!-- HT Coin Toss Animation section -->
+    <!-- TT Coin Toss Animation section -->
+    <!-- error message secton -->
+
+    <!-- Hidden area to record out user choices and spin result for each turn -->
+
     <!-- Bet history and Banking section -->
-    <section class="score-area">
-        <p class="scores">Kev Koala's Score: <i class="fas fa-cash-register"></i> <span class="operand-comp">0</span> / 500</p>
-        <p class="scores">Player Score: <i class="fas fa-piggy-bank"></i> <span class="operand-player">10</span> / 500</p>
-    </section>
+    <div class="score-area">
+        <p class="scores">Kev Koala's Score : <i class="fas fa-cash-register"></i> <span><input id="kevScore" class="operand" type="number" min="0" value="0" disabled></span> / 500</p>
+        <p class="scores">Your Bank : <i class="fas fa-piggy-bank"></i> <span><input id="bank" class="operand" type="number" min="0" value="9" disabled></span> / 500</p>
+    </div>
+
+    <!-- Footer section -->
     <footer>
         <button data-type="gameplay">Gameplay</button>| <a href="https://en.wikipedia.org/wiki/Two-up" target="_blank" aria-label="Link to Wikipedia all about TwoUp"> History</a>
         | <a href="https://en.wikipedia.org/wiki/Australia_Day" target="_blank" aria-label="Link to Wikipedia all about Australia Day"> Australia Day</a> | <a href="https://en.wikipedia.org/wiki/Anzac_Day" target="_blank" aria-label="Link to Wikipedia all about ANZAC Day"> ANZAC Spirit</a>
