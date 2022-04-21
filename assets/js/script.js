@@ -246,12 +246,37 @@ function betToNone() {
    document.getElementById('betAmount').value = 0;
 }
 
+/**
+* returns 4x bet has been won in the winner popup this turn
+*/
+function incrementWinPoints4() {
+   let pointsBet = document.getElementById('betAmount').value;
+   let increment = parseInt(pointsBet) * 4;
 
-
-// ------ Bank and Bet zero event 
+   document.getElementById('winPoints').value = increment;
+}
 
 /**
-* condition for a game over event
+* returns 2x bet has been won in the winner popup this turn
+*/
+function incrementWinPoints2() {
+   let pointsBet = document.getElementById('betAmount').value;
+   let increment = parseInt(pointsBet) * 2;
+
+   document.getElementById('winPoints').value = increment;
+}
+
+
+
+
+
+
+
+
+
+
+/**
+* condition for a game over event bank + bet = 0
 */
 function compareBankBet() {
     let ba = document.getElementById('betAmount').value;
