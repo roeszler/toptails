@@ -216,6 +216,16 @@ function calculateWinLoss() {
 }
 
 /**
+* increases the kevScore amount.
+*/
+function incrementKev() {
+   let kevBefore = document.getElementById('kevScore').value;
+   let kevAfter = document.getElementById('kevScore').value = ++kevBefore;
+   
+   parseInt(kevAfter);
+}
+
+/**
 * Resets the betAmount to 0 after a loss
 */
 function betToNone() {
