@@ -102,6 +102,26 @@
     </section>
 
     <!-- Gameplay Modal -->
+    <section id="gameplayPopup" class="popUp" onclick="gameplayOk();">
+        <div id="gameplayBox">
+            <h2>The Rules <i class="fas fa-dice"></i></h2>
+            <p>TopTails is a variation of the iconic and traditional Australian gambling game 'Two-up'.<br>The basic format of the game is:</p>
+                <ul>
+                    <li>Reach 500 points before Kev D Koala does to win the game.</li>
+                    <li>Betting and winning Two Heads (HH) or a combination of a Head and a Tail (HT) will win 2x the wagered bet</li>
+                    <li>Betting on spinning up TwoTails (TT) will win four times the wagered bet (x4); However...
+                        <ul>
+                            <li>... if any other combination is thrown, Kev wins <span class="bold">SIX TIMES</span> (x6) the amount you wagered.</li>
+                        </ul>
+                    </li>
+                    <li>If you loose any other the spin, the wagered bet is forefitied to Kev.</li>
+                    <li>If you empty the bank and/or Your or Kev's Score gets to 500 points, the game is ended.</li>
+                    <li>You can't bet more than the amount you have in the bank.</li>
+                </ul>
+            <button id="toGame" class="btn popupBtn toGame" onclick="gameplayOk();" aria-label="Button that closes the game rules window and opens the game area">Lets Play!</button>
+        </div>
+    </section>
+    
     <!-- HH Coin Toss Animation section -->
     <!-- HT Coin Toss Animation section -->
     <!-- TT Coin Toss Animation section -->
