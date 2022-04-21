@@ -349,7 +349,34 @@ footer > button:hover {
 }
 
 /* ------ Game Win Final Modal */
+#gameWinPopup {
+    display: none;
+    background: #00008B;
+    color: #ff0;
+    border-style: inset;
+    border-width: 1rem;
+    border-color: #ff0;
+}
 
+#gameWinPopup h2 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+#gameWinPopup i {
+    margin-top: 1rem;
+    color: #ff0;
+}
+
+#gameWinPopup img {
+    padding-top: 1rem;
+    margin-bottom: -2rem;
+}
+ 
+#FwRefBtn {
+    background-color: #ff0;
+    color: #00008B;
+}
 
 /* ------ Bank Empty Modal */
 
