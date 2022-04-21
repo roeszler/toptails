@@ -419,6 +419,25 @@ footer > button:hover {
 
 /* ------------ Betting Coin Animations  */
 /* ------ Global coin Animation & Styling */
+.coinPopUp {
+    position: relative;
+    box-shadow: none;
+    padding-top: 5rem;
+}
+
+#hhSpin {
+    display: none;
+}
+
+#htSpin {
+    display: none;
+}
+
+#ttSpin {
+    display: none;
+}
+
+/* ------ HH & TT Left coin ANIMATION  */
 @keyframes leftCoinSpinFront {
     from {
         transform: rotateY(0deg);
@@ -434,8 +453,6 @@ footer > button:hover {
         transform: rotateY(4860deg);
     }
 }
-
-/* ------ HH & TT Left coin ANIMATION  */
 
 /* ------ HH & TT Right coin ANIMATION */
 
