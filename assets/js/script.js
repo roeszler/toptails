@@ -3,10 +3,11 @@
 // ------ Functions
 
 // ------ DOM Listeners
-// Window: DOMContentLoaded
+// Window: DOMContentLoaded events
 
 window.addEventListener('load', (event) => {
   console.log('page is fully loaded');
 });
 
-// Document: DOMContentLoaded
+// Document: DOMContentLoaded events
+

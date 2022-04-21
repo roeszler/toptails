@@ -25,7 +25,7 @@ Site link : https://roeszler.github.io/toptails/
         * [Spin Button](#spin-button)
         * [Score Area](#score--bank-balance-area)
         * [Footer](#footer)
-        * [PopUps](#popups)
+        * [PopUps](#popups-modals)
         * [Record User Choices](#choice-html)
     * [Future Features](#possible-future-features)
 4. [Technologies](#4-technologies)
@@ -244,7 +244,7 @@ A close look at the game area from the words 'Bet Amount' to the 'Spin' button, 
 ![Footer](assets/images/docs/footer.webp)
 * Providing a link to the splash page gameplay information and educational links to history of Two Up and the Australian culture surrounding it.
 
-#### PopUps
+#### PopUps (Modals)
 As discussed in the [game area](#game-area) section, an alternative to using `alert()` functions has been used. The supporting code simultaneously removes and displays sections to convey major game events to the user. 
 
 These functions appear and are termed as a 'popups' across the site, they function more as a change of visibility in the HTML. This has been done as a way to not-be-limited by potential browser settings that block traditional popups.
@@ -452,6 +452,7 @@ Each of these included research and implementation of:
   * Creating a modal popup - [DZone](https://dzone.com/articles/4-ways-to-create-a-modal-popup-box-with-html-css-a)
   * The screen size for mockups and responsiveness testing was sampled from [GBK Soft](https://gbksoft.com/blog/common-screen-sizes-for-responsive-web-design/) and based current resolutions typically found globally
   * The text for the site was imported via google fonts as [Montserrat](https://fonts.google.com/specimen/Montserrat) by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly.
+  * Timing, loading and logging of the document object model (DOM) events - [Window: DOMContentLoaded_event](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) and [Document: DOMContentLoaded_event](https://stackoverflow.com/questions/588040/window-onload-vs-document-onload).
 
 ### Media
 
