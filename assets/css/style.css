@@ -463,5 +463,8 @@ footer > button:hover {
 }
 
 /* ------ Hide spin choice section */
+#choice {
+    display: none;
+}
 
 /* ------ Media Queries */
