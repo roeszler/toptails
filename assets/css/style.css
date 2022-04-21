@@ -532,8 +532,38 @@ footer > button:hover {
 }
 
 /* ------ HT Left coin ANIMATION  */
+@keyframes leftCoinSpinFrontHT {
+    from {
+        transform: rotateY(0deg);
+    } to {
+        transform: rotateY(5400deg);
+    }
+}
+
+@keyframes leftCoinSpinBackHT {
+    from {
+        transform: rotateY(180deg);
+    } to {
+        transform: rotateY(5220deg);
+    }
+}
 
 /* ------ HT Right coin ANIMATION  */
+@keyframes rightCoinSpinFrontHT {
+    from {
+        transform: rotateX(180deg);
+    } to {
+        transform: rotateX(5580deg);
+    }
+}
+
+@keyframes rightCoinSpinBackHT {
+    from {
+        transform: rotateX(0deg);
+    } to {
+        transform: rotateX(5400deg);
+    }
+}
 
 /* ------ HT Left Coin Spin STYLING */
 
