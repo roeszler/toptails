@@ -68,8 +68,6 @@ button:hover {
     transition-duration: 0.5s;
 }
 
-/* ------ Footer */
-
 /* ------ Logo */
 
 /* ------ Game area */
@@ -86,7 +84,23 @@ button:hover {
 
 /* ------ Scores area */
 
+/* ------ Footer */
+footer {
+    margin: 1rem 0;
+    color: #00843D80;
+}
 
+footer > button {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #3B3B3F80;
+    font-weight: inherit;
+}
+
+footer > button:hover {
+    color: #00843D80;
+}
 
 /* ------ Global style for 'popUps' (Modals) */
 
