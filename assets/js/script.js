@@ -49,6 +49,25 @@ function looseRender() {
     document.getElementById('gameplayPopup').style.display = 'none';
 }
 
+// Final game win render
+/**
+ * Display gameWinPopup section & hide game-area section
+ */
+function gameWinRender() {
+    document.getElementById('gameWinPopup').style.display = 'block';
+    document.getElementById('game-area').style.display = 'none';
+    document.getElementById('gameplayPopup').style.display = 'none';
+}
+/**
+ * Display game-area section & hide gameWinPopup section
+ */
+function gameWinOk() {
+    document.getElementById('gameWinPopup').style.display = 'none';
+    document.getElementById('game-area').style.display = 'block';
+    document.getElementById('gameplayPopup').style.display = 'none';
+}
+
+
 
 // ------ DOM Listeners
 // Window: DOMContentLoaded events
