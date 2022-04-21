@@ -64,8 +64,17 @@
             <button id="lossBtn" class="btn popupBtn" onclick="looseOk();" aria-label="Back to bet-area button">Bet Again</button>
         </div>
     </section>
-    
+
     <!-- Game Over Modal -->
+    <section id="gameOverPopup" class="popUp" onclick="refreshPage();">
+        <div id="gameOverBox">
+            <i class="fas fa-sad-cry fa-5x"></i>
+            <h2>Aww Shucks...<br>Game over Man,<br>Game Over!</h2>
+            <button id="playAgain" class="btn popupBtn" onclick="refreshPage();" aria-label="Play Agian?">Play Again</button>
+            <button id="GoRefBtn" class="btn popupBtn referFreinds" onclick="linkedIn();" aria-label="Tell your Friends">Share with Friends</button>
+        </div>
+    </section>
+    
     <!-- Game Win Final Modal -->
     <!-- Out of Money Modal -->
     <!-- Gameplay Modal -->
