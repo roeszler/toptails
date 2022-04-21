@@ -379,6 +379,13 @@ footer > button:hover {
 }
 
 /* ------ Out of Money Modal */
+#outOfMoneyPopup {
+    display: none;
+}
+
+#outOfMoneyPopup h2 {
+    color: #FF0000;
+}
 
 /* ------ Gameplay Modal */
 
