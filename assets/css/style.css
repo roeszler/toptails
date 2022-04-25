@@ -70,7 +70,8 @@ button:hover {
 
 /* ------ Logo */
 .logo {
-    height: 7em;
+    height: auto;
+    width: 128px;
     padding: 1em 0;
 }
 
@@ -672,7 +673,8 @@ footer > button:hover {
     }
 
     .logo {
-        height: 5rem;
+        height: auto;
+        width: 65px;
         padding: 1rem;
         display: inline;
     }
