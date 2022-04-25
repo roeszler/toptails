@@ -5,7 +5,7 @@
 body {
     background-color: #ffff;
     font-family: 'Montserrat', sans-serif;
-    color: #3B3B3F;
+    color: #000000E6;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -51,7 +51,7 @@ ul li ul li::before {
 a {
     text-decoration: none;
     font-size: 0.75rem;
-    color: #3B3B3F80;
+    color: #3B3B3F;
 }
 
 a:hover {
@@ -227,19 +227,19 @@ input[type=number] {
 /* ------ Footer */
 footer {
     margin: 1rem 0;
-    color: #00843D80;
+    color: #00843D;
 }
 
 footer > button {
     background: none;
     border: none;
     text-decoration: none;
-    color: #3B3B3F80;
+    color: #3B3B3F;
     font-weight: inherit;
 }
 
 footer > button:hover {
-    color: #00843D80;
+    color: #00843D;
 }
 
 /* ------ Global style for 'popUps' (Modals) */
