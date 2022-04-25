@@ -221,7 +221,7 @@ Each button has three states:
 * An active status also `enables` the spin button to change from a disabled state to a 'clickable' enabled state, promoting the game to continue.
 
 #### Spin Button
-A close look at the game area from the words 'Bet Amount' to the 'Spin' button, you will see a gradual increase in the font size, boldness and bright colouring. This 'pyramidal styling' has been deliberate, with the intention to draw the eye and lead the user intuitively to the object of the game... to spin the button.
+A closer look at the game area from the words 'Bet Amount' to the 'Spin' button, you will see a gradual increase in the font size, boldness and bright colouring. This 'pyramidal styling' has been deliberate to attend to user experience design and presented in terms of priority. This layout draws the eye and leads the user intuitively to the object of the game... to spin the button.
 
 ![The Spin Pyramid](assets/images/docs/spinPyramid.webp)
 
@@ -385,15 +385,15 @@ The site has been tested on each of the following popular browsers to check for 
   * From the pass, the following metrics were returned: 
     * There are 41 functions in this file.
     * Function with the largest signature take 0 arguments, while the median is 0.
-    * Largest function has 28 statements in it, while the median is 4.
+    * Largest function has 28 statements in it, while the median is 3.5.
     * The most complex function has a cyclomatic complexity value of 10 while the median is 1.
 
 
 
   * #### No errors were found
-  * #### One Warning:
+  * #### One warning was presented:
     * Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (generateSpinResult, changeSpinActive, hhActive, htInactive, ttInactive, userChoice, htActive, hhInactive, ttActive, decrementBet, incrementBet, outOfMoneyRender, throwError).
-      * Event listener code at lines 443 and 505 reference outer scoped variables. The Js validation process indicates that this may lead to confusing semantics. At this point, I have been unable to find a suitable alternative to these semantics that functions, outside of repeating code at each iteration. This would make the resulting event listener structure a lot larger and less manageable due to the repeated code so I have decided to allow the warning to remain.
+      * Event listener code starting at line 460 references outer scoped variables. The Js validation process indicates that this may lead to confusing semantics. I have been unable to get suitable alternatives to these semantics that function as I would wish, outside of repeating code at each iteration. This would make the resulting event listener structure a lot larger and less manageable due to the multiple replication of code. I have not viewed this as a significant issue of the JavaScript code and have allowed the warning to remain with the knowledge of the functionality the code brings to the game.
   
   * #### JSHint validation indicates that there are 13 unused variables: 
     * refreshPage();
