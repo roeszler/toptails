@@ -419,6 +419,10 @@ footer > button:hover {
     bottom: 0;
 }
 
+#gameplayPopup li {
+    font-size: 0.85rem;
+}
+
 .toGame {
     background-color: #00843D;
     color: #fff;
