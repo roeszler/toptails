@@ -145,16 +145,6 @@ function linkedIn() {
    parent.open('https://www.linkedin.com/in/stuartroeszler/');
 }
 
-
-
-
-
-
-
-
-
-
-
 // ------ Game Engine Functions
 /**
 * Generates the spin result as a random number between 1 and 3
@@ -455,8 +445,8 @@ function errorOk () {
 // ------ DOM Listeners
 // ------ Window: DOMContentLoaded Event Listeners
 
-window.addEventListener('load', (event) => {
-  console.log('page is fully loaded');
+window.addEventListener('load', function() {
+        console.log('page is fully loaded');
 });
 
 // ------ Document: DOMContentLoaded Event Listeners
@@ -561,3 +551,68 @@ ttCoinEnd.addEventListener("animationend", function() {
         calculateWinLoss();
     }
 });
+
+// ------ Possible future functions 
+
+// ------ Event listener for mousedown of incrementBet() and decrementBet() functions
+
+// let timeout, interval;
+
+// [].forEach.call(document.querySelectorAll('.btn--add'), function(buttonAdd) {
+//   buttonAdd.addEventListener('mousedown', function() {
+//     let id = buttonAdd.dataset.target;
+//     incrementValue(id);
+    
+//     timeout = setTimeout(function() {
+//       interval = setInterval(function() {
+//         incrementValue(id);
+//       }, 50);    
+//     }, 300);
+//   });
+  
+//   buttonAdd.addEventListener('mouseup', clearTimers);
+//   buttonAdd.addEventListener('mouseleave', clearTimers); 
+  
+//   function clearTimers() {
+//     clearTimeout(timeout);
+//     clearInterval(interval);
+//   }
+// });
+
+// function incrementValue(betAmount) {
+//   let el = document.getElementById(betAmount);
+//   let value = parseInt(el.textContent, 10);
+//   document.getElementById(betAmount).textContent = ++value;
+// }
+
+
+// [].forEach.call(document.querySelectorAll('.btn--minus'), function(buttonMinus) {
+//   buttonMinus.addEventListener('mousedown', function() {
+//     let id = buttonMinus.dataset.target;
+//     decrementValue(id);
+    
+//     timeout = setTimeout(function() {
+//       interval = setInterval(function() {
+//         decrementValue(id);
+//       }, 50);    
+//     }, 300);
+//   });
+  
+//   buttonMinus.addEventListener('mouseup', clearTimers);
+//   buttonMinus.addEventListener('mouseleave', clearTimers); 
+  
+//   function clearTimers() {
+//     clearTimeout(timeout);
+//     clearInterval(interval);
+//   }
+// });
+
+// function decrementValue(betAmount) {
+//   let el = document.getElementById(betAmount);
+//   let value = parseInt(el.textContent, 10);
+//   document.getElementById(betAmount).textContent = --value;
+// }
+
+
+// ------ Error Function
+

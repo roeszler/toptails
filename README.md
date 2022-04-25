@@ -259,12 +259,14 @@ There are a total of ten (10) of these change of state 'popups' across the site:
   * Head Head - results in two heads turning up.
   * Head Tail - results in one head plus one tail turning up.
   * Tail Tail - results in two tails turning up.
-* [Error Event](assets/images/docs/error.webp) - in the event that a NaN input occurs or another un-identifed error occurs.
+* [Error Event](assets/images/docs/error.webp) - was coded in the event that a NaN input occuring, however made obsolete by each input now `<input: disbaled>` to prevent user typing a string value.
 
 #### Choice HTML
 This is a hidden section within the body of the `HTML` used to pivot data and log bet choices at any given turn. Never seen by the user as `style.display: none;`, it is used in the functions to select, re-select and sticky select between turns.
 ### Possible Future Features
 * Resolve the larger `eventListeners` + `if` / `else` functions into `switch()` / `case` function.
+* Include event listener to increaseBet and decreaseBet function with a user holding mouseDown on each.
+* Refine the use of the `throwError()` function to listen for `window.onerror` events.
 * Include levels play, with increasing difficulty levels.
 * Re-style for annual events (ie Christmas, St Patricks Day, Remembrance Day, ANZAC Day, Australia Day)
 * Refinement of game probability model away from 1 in 3 to 1 in 4, and subsequent adjustment of the odds for each.
