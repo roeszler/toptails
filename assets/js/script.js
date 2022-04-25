@@ -437,6 +437,9 @@ function throwError() {
     }
 }
 
+/** 
+ * Hide display of throwError function 
+ */
 function errorOk () {
     document.getElementById('error').style.display = 'none';
     document.getElementById('game-area').style.display = 'block';
