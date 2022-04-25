@@ -215,7 +215,7 @@ Each button has three states:
 ![Bet Type Area](assets/images/docs/betTypeActive.webp)
 
 * This follows an 'on mouse click' user interaction.
-* The user action enlarges the button, changes the color of the text and background and internal icon from two coin stacks to a double check symbol, subtley rewarding the user for their interaction.
+* The user action enlarges the button, changes the color of the text and background and internal icon from two coin stacks to a double check symbol, subtly rewarding the user for their interaction.
 * The state remains active until the user either clicks on another bet choice button or the overall game is ended / won.
   * This remain active state has been coded to allow improved user interaction and automation, promoting game flow when repeating the spin function.
 * An active status also `enables` the spin button to change from a disabled state to a 'clickable' enabled state, promoting the game to continue.
@@ -369,11 +369,10 @@ The site has been tested on each of the following popular browsers to check for 
 * CSS
     * No errors were found when passing through the official [W3C CSS validator](https://jigsaw.w3.org/css-validator/).
       * [TopTails CSS Validation Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Froeszler.github.io%2Ftoptails%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
-  
-  Note: 20 warnings were however displayed when passing through the same [validator](https://jigsaw.w3.org/css-validator/).
-    * These relate to including `-webkit-...` and `-moz-...` to ensure a variety of browsers to hide the up/down arrows styling on input fields, a deired functional feature of site.
-    * Researching this topic produced [ineteresting opinions](https://meiert.com/en/blog/css-validation-and-vendor-extensions/) surrounding the use of vendor extensions and their relationship to validation.
-    * I have resolved to let these warnings remain, aknowledging that the end result is a much more consistent user experience across current popular browsers.
+    * Note: 20 warnings were however displayed when passing through the same [validator](https://jigsaw.w3.org/css-validator/).
+      * These relate to including `-webkit-...` and `-moz-...` to ensure a variety of browsers to hide the up/down arrows styling on input fields, a desired functional feature of site.
+      * Researching this topic revealed [interesting opinions](https://meiert.com/en/blog/css-validation-and-vendor-extensions/) surrounding the use of vendor extensions and their relationship to validation.
+      * I have decided to let these warnings remain, acknowledging that the end result is a much more consistent user experience across current popular browsers.
 
 * JavaScript
   
