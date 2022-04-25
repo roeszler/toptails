@@ -104,9 +104,8 @@ Based on providing visual depth and variety of events to the game user, the foll
 
 | Primary Color Palette | Hexadecimal Value | RGBA Value  |
 | - |:-:| -:|
-| Text Gray | #3B3B3F | rgba(59,59,63, 1) |
-| Fade Gray | #3B3B3F80 | rgba(59,59,63, 0.5) |
-| Inactive Gray | #3B3B3F33 | rgba(59,59,63, 0.2) |
+| Text Gray | #000000E6 | rgba(0,0,0, 0.9) |
+| Inactive Gray | #3B3B3F | rgba(59,59,63, 0.2) |
 | Australian Green | #00843D | rgba(0,140,60, 1) |
 | Fade Australian Green | #00843D80 | rgba(0,140,60, 0.5) |
 | Game Area Green | #00843D0D | rgba(0,140,60, 0.05) |
@@ -363,10 +362,14 @@ The site has been tested on each of the following popular browsers to check for 
 ### Validator Testing 
 
 * HTML
-    * No errors were returned when passing through the official [W3C validator]().
+    * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/).
+
+![W3 HTML Validation]()
 
 * CSS
-    * No errors were found when passing through the official [(Jigsaw) validator]().
+    * No errors were found when passing through the official [W3C CSS validator](https://jigsaw.w3.org/css-validator/).
+
+![CSS Jigsaw Validation]()
 
 * JavaScript
   
@@ -379,6 +382,8 @@ The site has been tested on each of the following popular browsers to check for 
     * Function with the largest signature take 0 arguments, while the median is 0.
     * Largest function has 28 statements in it, while the median is 4.
     * The most complex function has a cyclomatic complexity value of 10 while the median is 1.
+
+
 
   * #### No errors were found
   * #### One Warning:
@@ -403,9 +408,9 @@ The site has been tested on each of the following popular browsers to check for 
     Each of these functions has been created to sit within their relative HTML element and allow user events to activate them and control numerous functions to occur. The decision has been to allow the unused variables notification to remain. This is in exchange for the functionality that it permits in the game at this stage of my learning.
 
 * Accessibility
-  * I confirmed that the colours, contrast and fonts chosen are easy to read and accessible by running it through [lighthouse](https://developers.google.com/web/tools/lighthouse/) in dev tools.
+  * I confirmed that the colours, contrast and fonts chosen are easy to read and accessible by running it through [lighthouse](https://developers.google.com/web/tools/lighthouse/) in dev tools. 
 
-  ![Accessibility Pic]()
+ ![Accessibility Pic](assets/images/docs/toptailsAccessibility25-04-22.webp)
 
 ## 6. Deployment
 ### Display Environment (GitHub / GitLab / BitBucket)
@@ -454,6 +459,7 @@ Each of these included research and implementation of:
   * The text for the site was imported via google fonts as [Montserrat](https://fonts.google.com/specimen/Montserrat) by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly.
   * Timing, loading and logging of the document object model (DOM) events - [Window: DOMContentLoaded_event](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) and [Document: DOMContentLoaded_event](https://stackoverflow.com/questions/588040/window-onload-vs-document-onload).
   * Adding a 'Pseudo Selector' to add content before an element, in this case the coin buttons - [CSS-Tricks.com](https://css-tricks.com/pseudo-class-selectors/).
+  * How to cache static resources using HTTP caching - [WebDev](https://web.dev/uses-long-cache-ttl/#how-to-cache-static-resources-using-http-caching)
 
 ### Media
 

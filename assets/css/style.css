@@ -385,6 +385,10 @@ footer > button:hover {
 }
 
 #outOfMoneyPopup h2 {
+    font-size: 2.5rem;
+}
+
+#spender {
     color: #FF0000;
 }
 
@@ -761,6 +765,7 @@ footer > button:hover {
         padding: none;
         width: 100%;
         margin-top: 0rem;
+        color: #00843D;
     }
 
     #outOfMoneyPopup h2 {
