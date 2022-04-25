@@ -358,18 +358,22 @@ The site has been tested on each of the following popular browsers to check for 
 * Include `changeSpinActive();` function to betType buttons
 * Code bank to not progress past zero: `} else if (bank > 0) {`.
 * Code withdraw and deposit bank functions increment by 1 `document.getElementById('bank').innerHTML = parseInt(bank) - parseInt(1);` and `document.getElementById('bank').innerHTML = parseInt(bank) + parseInt(1);`.
+* Error returned when WC3 HTML testing with using `<meta http-equiv="cache-control" content="max-age=604800, public">` to control caching in head. HTML5 no longer supports syntax. Included explicit sizing for `class="logo"` within HTML and removed the relative head `<meta>` code. 
 
 ### Validator Testing 
 
 * HTML
     * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/).
-
-![W3 HTML Validation]()
+      * [Toptails HTML Validation Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Froeszler.github.io%2Ftoptails%2F)
 
 * CSS
     * No errors were found when passing through the official [W3C CSS validator](https://jigsaw.w3.org/css-validator/).
-
-![CSS Jigsaw Validation]()
+      * [TopTails CSS Validation Results]()
+  
+  Note: 20 warnings were however displayed when passing through the same [validator](https://jigsaw.w3.org/css-validator/).
+    * These relate to including `-webkit-...` and `-moz-...` to ensure a variety of browsers to hide the up/down arrows styling on input fields, a deired functional feature of site.
+    * Researching this topic produced [ineteresting opinions](https://meiert.com/en/blog/css-validation-and-vendor-extensions/) surrounding the use of vendor extensions and their relationship to validation.
+    * I have resolved to let these warnings remain, aknowledging that the end result is a much more consistent user experience across current popular browsers.
 
 * JavaScript
   
