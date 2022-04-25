@@ -612,7 +612,3 @@ ttCoinEnd.addEventListener("animationend", function() {
 //   let value = parseInt(el.textContent, 10);
 //   document.getElementById(betAmount).textContent = --value;
 // }
-
-
-// ------ Error Function
-
