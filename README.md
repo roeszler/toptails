@@ -391,7 +391,7 @@ The site has been tested on each of the following popular browsers to check for 
   * #### No errors were found
   * #### One Warning:
     * Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (generateSpinResult, changeSpinActive, hhActive, htInactive, ttInactive, userChoice, htActive, hhInactive, ttActive, decrementBet, incrementBet, outOfMoneyRender, throwError).
-      * Event listener code at lines 443 and 505 reference outer scoped variables. The Js validation process indicates that this may lead to confusing semantics. I have been unable to find a suitable alternative to these semantics that functions, outside of repeating code at each iteration. This would make the resulting event listener structure a lot larger and less manageable due to the repeated code so I have decided to allow the warning to remain.
+      * Event listener code at lines 443 and 505 reference outer scoped variables. The Js validation process indicates that this may lead to confusing semantics. At this point, I have been unable to find a suitable alternative to these semantics that functions, outside of repeating code at each iteration. This would make the resulting event listener structure a lot larger and less manageable due to the repeated code so I have decided to allow the warning to remain.
   
   * #### JSHint validation indicates that there are 13 unused variables: 
     * refreshPage();
@@ -408,7 +408,7 @@ The site has been tested on each of the following popular browsers to check for 
     * resetSpin();
     * errorOk();
     
-    Each of these functions has been created to sit within their relative HTML element and allow user events to activate them and control numerous functions to occur. The decision has been to allow the unused variables notification to remain. This is in exchange for the functionality that it permits in the game at this stage of my learning.
+    Each of these functions has been created to sit within their relative HTML element and allow user events to activate them and control numerous functions to occur. I have decided to allow the unused variables notification to remain. This is in exchange for the functionality that it permits in the game at this stage of my learning.
 
 * Accessibility
   * I confirmed that the colours, contrast and fonts chosen are easy to read and accessible by running it through [lighthouse](https://developers.google.com/web/tools/lighthouse/) in dev tools. 
