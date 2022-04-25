@@ -478,7 +478,6 @@ document.addEventListener('DOMContentLoaded', function() {
                htInactive();
                ttInactive();
                userChoice = 1;
-            //    userChoice = `${this.value}`;
 
            } else if (this.getAttribute('data-type') === 'HT') {
                changeSpinActive();
@@ -486,7 +485,6 @@ document.addEventListener('DOMContentLoaded', function() {
                hhInactive();
                ttInactive();
                userChoice = 2;
-            //    userChoice = `${this.value}`;
 
            } else if (this.getAttribute('data-type') === 'TT') {
                changeSpinActive();
@@ -494,7 +492,6 @@ document.addEventListener('DOMContentLoaded', function() {
                hhInactive();
                htInactive();
                userChoice = 3;
-            //    userChoice = `${this.value}`;
 
            } else if (this.getAttribute('data-type') === 'decrease bet') {
                let betChoice = document.getElementById('betAmount').value;

@@ -43,6 +43,10 @@ ul li ul li::before {
     padding-right: 0.5rem;
 }
 
+input:disabled {
+    color: #000;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -209,7 +213,6 @@ input[type=number] {
     padding: 0 1rem;
 }
 .operand {
-    color: #FF0000;
     border: none;
     background: none;
     max-width: 2rem;
@@ -220,8 +223,12 @@ input[type=number] {
     font-weight: 400;
 }
 
+#kevScore {
+    color: #FF0000;
+}
+
 #bank {
-    color: #00008B;
+    color: #00843D;
 }
 
 /* ------ Footer */
