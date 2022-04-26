@@ -267,7 +267,7 @@ There are a total of ten (10) of these change of state 'popups' across the site:
     * Head Tail - results in one head plus one tail turning up. - `htActive();`
     * Tail Tail - results in two tails turning up. - `ttActive();`
 * [Error Event](assets/images/docs/error.webp) - `throwError();`
-  * attached to a `window.addEventListener`, this popup handles and logs any error events.
+  * attached to a `window.onerror`, this popup handles and logs any error events.
 
 #### Choice HTML
 This is a hidden section within the body of the `HTML` used to pivot data and log bet choices at any given turn. Never seen by the user as `style.display: none;`, it is used in the functions to select, re-select and sticky select between turns.
@@ -391,12 +391,10 @@ The site has been tested on each of the following popular browsers to check for 
     ![JSHint Settings](assets/images/docs/JSHintSettings.webp)
 
   * From the pass, the following metrics were returned: 
-    * There are 41 functions in this file.
-    * Function with the largest signature take 0 arguments, while the median is 0.
-    * Largest function has 28 statements in it, while the median is 3.5.
+    * There are 43 functions in this file.
+    * Function with the largest signature take 1 arguments, while the median is 0.
+    * Largest function has 28 statements in it, while the median is 3.
     * The most complex function has a cyclomatic complexity value of 10 while the median is 1.
-
-
 
   * #### No errors were found
   * #### One warning was presented:

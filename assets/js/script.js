@@ -450,14 +450,20 @@ function errorOk () {
 // ------ DOM Listeners
 // ------ Window: DOMContentLoaded Event Listeners
 
+/**
+* Listener that logs successful loading of DOM
+*/
 window.addEventListener("load", function() {
         console.log("page is fully loaded");
 });
 
-window.addEventListener("error", (event) => {
+/**
+* Window error event function
+*/
+window.onerror = function(event) {
     console.log(event);
     throwError();
- });
+};
 
 // ------ Document: DOMContentLoaded Event Listeners
 
