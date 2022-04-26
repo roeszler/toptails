@@ -288,7 +288,7 @@ footer > button:hover {
 }
 
 #winnerPopup h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     margin: 1rem 0rem;
 }
@@ -765,6 +765,10 @@ footer > button:hover {
 
     .scores .fas {
         display: none;
+    }
+
+    #winnerPopup h2 {
+        font-size: 2.5rem;
     }
 
     #playAgain {

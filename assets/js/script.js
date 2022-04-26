@@ -416,25 +416,24 @@ function gameplayRender() {
 function throwError() {
     try {
         throw {
-            number: 583,
-            type: typeof(console.error("583_UNDEFINED_CHARACTER")),
-            message: "character error occurred",
-            contact: '<p>Pease contact <a href="https://github.com/roeszler" aria-label="Authors gitHub details" target="_blank">the site author</a> to register the error</p>',
+            type: typeof(console.error()),
+            message: "error occurred",
+            contact: '<p>Pease contact <a href="https://github.com/roeszler" aria-label="Authors gitHub details" target="_blank">the site author</a> to register it.</p>',
             button: '<button class="btn popupBtn" onclick="errorOk();">Return to Toptails</button>'
-        };
-    } catch(err) {
-        document.getElementById("error").style.display = "block";
-        document.getElementById("game-area").style.display = "none";
-        document.getElementById("gameplayPopup").style.display = "none";
-        document.getElementById("lossPopup").style.display = "none";
-        document.getElementById("gameOverPopup").style.display = "none";
-        document.getElementById("gameWinPopup").style.display = "none";
-        document.getElementById("outOfMoneyPopup").style.display = "none";
-        document.getElementById("hhSpin").style.display = "none";
-        document.getElementById("htSpin").style.display = "none";
-        document.getElementById("ttSpin").style.display = "none";
-        document.getElementById("errorMessage").innerHTML = "OOPS! <br>" + err.number + "_" + err.type + "<br>" + err.message + "<br>" + err.contact + err.button;
-    }
+            };
+        } catch(err) {
+            document.getElementById("error").style.display = "block";
+            document.getElementById("game-area").style.display = "none";
+            document.getElementById("gameplayPopup").style.display = "none";
+            document.getElementById("lossPopup").style.display = "none";
+            document.getElementById("gameOverPopup").style.display = "none";
+            document.getElementById("gameWinPopup").style.display = "none";
+            document.getElementById("outOfMoneyPopup").style.display = "none";
+            document.getElementById("hhSpin").style.display = "none";
+            document.getElementById("htSpin").style.display = "none";
+            document.getElementById("ttSpin").style.display = "none";
+            document.getElementById("errorMessage").innerHTML = "OOPS! <br> an " + err.type + "<br>" + err.message + "<br>" + err.contact + err.button;
+        }
 }
 
 /** 
@@ -451,6 +450,11 @@ function errorOk () {
 window.addEventListener("load", function() {
         console.log("page is fully loaded");
 });
+
+window.addEventListener("error", (event) => {
+    console.log(event);
+    throwError();
+ });
 
 // ------ Document: DOMContentLoaded Event Listeners
 
