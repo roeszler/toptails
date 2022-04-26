@@ -42,7 +42,7 @@ Site link : https://roeszler.github.io/toptails/
     * [Media](#media)
 ## 1. Project Purpose
 
-The TwoTails website was created as the second part of my project portfolio while styling the [Code Insitute's Full Stack Software Developer course](https://codeinstitute.net/se/full-stack-software-development-diploma/). It has been built from the ground up to extend myself, demonstrate the use of JavaScript (vanilla JavaScript), HTML and CSS employing User Centred Design and have some fun. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. 
+The TwoTails website was created as the second part of my project portfolio while styling the <a href="https://codeinstitute.net/se/full-stack-software-development-diploma/" target="_blank">Code Insitute's Full Stack Software Developer course</a>. It has been built from the ground up to extend myself, demonstrate the use of JavaScript (vanilla JavaScript), HTML and CSS employing User Centred Design and have some fun. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. 
 
 TopTails is a fully responsive game that allows users to bet, choose and chance their luck at winning against a virtual opponent (Kev the Koala) and beating him to 500 points.  
 
