@@ -54,7 +54,7 @@ TopTails TwoUp (or TopTails for short) is a site that hopes to convey a variatio
 
 As a game of chance, TopTails allows users to betting on the outcome of two pennies 'virtually thrown' in the air. Typically played in conjunction with the Australian national remembrance of the [ANZAC spirit](https://en.wikipedia.org/wiki/Anzac_Day), it also represents a game often played at a period of time Australia first displayed itself as distinctly separate nation on the global stage. You may read more about this [here](https://en.wikipedia.org/wiki/Two-up) (Hold CTRL to open in new tab).
 
-The User Experience Design (UXD) seen in TopTails has been underpinned by a recognised User Centered Design (UCD) process. A framework of each step in this UCD process has been devloped from extensive experience in business planning and modules studied Code Institute's [Diploma in Full Stack Software Development](https://codeinstitute.net/se/full-stack-software-development-diploma/). The framework followed can be seen in the attached documentation: 
+The User Experience Design (UXD) seen in TopTails has been underpinned by a recognised User Centered Design (UCD) process. A framework of each step in this UCD process has been devloped from the authors experience in business planning and modules studied Code Institute's [Diploma in Full Stack Software Development](https://codeinstitute.net/se/full-stack-software-development-diploma/). The framework followed can be seen in the attached documentation: 
 1. [Strategy Plane](assets/ucd/1-strategy.md)
 2. [Scope Plane](assets/ucd/2-scope.md)
 3. [Structure Plane](assets/ucd/3-structure.md)
