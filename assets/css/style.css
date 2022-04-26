@@ -525,7 +525,6 @@ footer > button:hover {
     animation-name: rightCoinSpinFront;
     animation-duration: 3s;
     animation-fill-mode: backwards;
-    /* animation-delay: 1s; */
     
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -538,7 +537,6 @@ footer > button:hover {
     animation-name: rightCoinSpinBack;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    /* animation-delay: 1s; */
     
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
