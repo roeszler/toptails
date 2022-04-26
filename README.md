@@ -382,7 +382,7 @@ The site has been tested on each of the following popular browsers to check for 
     * Note: 20 warnings were displayed when passing through the same [validator](https://jigsaw.w3.org/css-validator/).
       * These relate to including `-webkit-...` and `-moz-...` to ensure a variety of browsers to hide the up/down arrows styling on input fields, a desired functional feature of site.
       * Researching this topic revealed [interesting opinions](https://meiert.com/en/blog/css-validation-and-vendor-extensions/) surrounding the use of vendor extensions and their relationship to validation.
-      * It seems approriate to let these warnings remain, acknowledging the binary nature of validators and that the reamining code results in a much more consistent user experience across current popular browsers.
+      * It seems appropriate to let these warnings remain, acknowledging the binary nature of validators and that the reamining code results in a much more consistent user experience across current popular browsers.
 
 * JavaScript
   
