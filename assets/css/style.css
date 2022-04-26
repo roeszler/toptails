@@ -784,7 +784,11 @@ footer > button:hover {
         font-size: 2.5rem;
     }
 
-    #testSection {
+    #bank {
+        color: #003300;
+    }
+
+    footer {
         display: none;
     }
 }
@@ -794,5 +798,13 @@ footer > button:hover {
     .bet-area button {
         width: 100%;
         border-radius: 0%;
+    }
+
+    #bank {
+        color: #003300;
+    }
+
+    footer {
+        display: none;
     }
 }
