@@ -798,10 +798,45 @@ footer > button:hover {
     .bet-area button {
         width: 100%;
         border-radius: 0%;
+        min-height: 3em;
+    }
+
+    .logo {
+        padding: 0;
+        margin: 0.8rem 1rem 0.8rem 0;
+        padding-left: 35%;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+        float: left;
+        width: 35%;
+        margin-bottom: 0.8rem;
+    }
+
+    #winnerPopup h2 {
+        font-size: 2rem;
     }
 
     #bank {
         color: #003300;
+    }
+
+    .coin {
+        height: 125px;
+        padding: 2.5rem 0 ;
+    }
+
+    #game-area h2 {
+        font-size: 1.2rem;
+    }
+
+    #spin {
+        height: 5rem;
+    }
+
+    .scores {
+        margin: 1rem 0 0;
     }
 
     footer {
