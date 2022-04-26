@@ -42,7 +42,7 @@ Site link : https://roeszler.github.io/toptails/
     * [Media](#media)
 ## 1. Project Purpose
 
-The TwoTails website was created as the second part of my project portfolio while styling the <a href="https://codeinstitute.net/se/full-stack-software-development-diploma/" target="_blank">Code Insitute's Full Stack Software Developer course</a>. It has been built from the ground up to extend myself, demonstrate the use of JavaScript (vanilla JavaScript), HTML and CSS employing User Centred Design and have some fun. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. 
+The TwoTails website was created as the second part of my project portfolio while styling the [Code Insitute's Full Stack Software Developer course](https://codeinstitute.net/se/full-stack-software-development-diploma/). It has been built from the ground up to extend myself, demonstrate the use of JavaScript (vanilla JavaScript), HTML and CSS employing User Centred Design and have some fun. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. 
 
 TopTails is a fully responsive game that allows users to bet, choose and chance their luck at winning against a virtual opponent (Kev the Koala) and beating him to 500 points.  
 
@@ -249,17 +249,25 @@ As discussed in the [game area](#game-area) section, an alternative to using `al
 These functions appear and are termed as a 'popups' across the site, they function more as a change of visibility in the HTML. This has been done as a way to not-be-limited by potential browser settings that block traditional popups.
 
 There are a total of ten (10) of these change of state 'popups' across the site: 
-* [Gameplay](assets/images/docs/gamePlay.webp) - indicates the rules and gameplay of TopTails. Let’s play button.
-* [Winner](assets/images/docs/winnerPopup.webp) - in the event of a win each turn. It details a win message and how many points have been won on the amount wagered. Australian green and yellow coloring. Bank points button.
-* [Looser](assets/images/docs/looserPopup.webp) - in the event of a loss each turn. Simple non-complementary primary colours. Return to game button.
-* [Game Over](assets/images/docs/gameOverPopup.webp) - in the event of zero funds and bet amount, or when Kev reaches 500 points before the user. 
-* [Game Win Final](assets/images/docs/gameWinFinal.webp) - in the event of user reaching 500 points. Australian flag blue and white with celebrating koala image. Share with friends on social media button.
-* [Out of money](assets/images/docs/outOfMoney.webp) - in the event the user tries to increment the bet more than the amount they have in the bank. Notifies that the bank is empty. 
-* [Coin animations](assets/images/docs/coinFlip.webp) - animation displayed for 3s at the spin event.
-  * Head Head - results in two heads turning up.
-  * Head Tail - results in one head plus one tail turning up.
-  * Tail Tail - results in two tails turning up.
-* [Error Event](assets/images/docs/error.webp) - was coded in the event that a NaN input occuring, however made obsolete by each input now `<input: disbaled>` to prevent user typing a string value.
+* [Gameplay](assets/images/docs/gamePlay.webp) - JavaScript Function: `gameplayRender();` 
+  * indicates the rules and gameplay of TopTails. Let’s play button.
+* [Winner](assets/images/docs/winnerPopup.webp)- `winnerRender();`
+  * in the event of a win each turn. It details a win message and how many points have been won on the amount wagered. Australian green and yellow coloring. Bank points button.
+* [Looser](assets/images/docs/looserPopup.webp) - `looseRender();`
+  * in the event of a loss each turn. Simple non-complementary primary colours. Return to game button.
+* [Game Over](assets/images/docs/gameOverPopup.webp) - `gameOverRender();`
+  * in the event of zero funds and bet amount, or when Kev reaches 500 points before the user. 
+* [Game Win Final](assets/images/docs/gameWinFinal.webp) - `gameWinRender();`
+  * in the event of user reaching 500 points. Australian flag blue and white with celebrating koala image. Share with friends on social media button.
+* [Out of money](assets/images/docs/outOfMoney.webp) - `outOfMoneyRender();`
+  * in the event the user tries to increment the bet more than the amount they have in the bank. Notifies that the bank is empty. 
+* [Coin animations](assets/images/docs/coinFlip.webp) - `generateSpinResult();`
+  * animation displayed for 3s at the spin event.
+    * Head Head - results in two heads turning up - `hhActive();`
+    * Head Tail - results in one head plus one tail turning up. - `htActive();`
+    * Tail Tail - results in two tails turning up. - `ttActive();`
+* [Error Event](assets/images/docs/error.webp) - `throwError();`
+  * attached to a `window.addEventListener`, this popup handles and logs any error events.
 
 #### Choice HTML
 This is a hidden section within the body of the `HTML` used to pivot data and log bet choices at any given turn. Never seen by the user as `style.display: none;`, it is used in the functions to select, re-select and sticky select between turns.
@@ -371,10 +379,10 @@ The site has been tested on each of the following popular browsers to check for 
 * CSS
     * No errors were found when passing through the official [W3C CSS validator](https://jigsaw.w3.org/css-validator/).
       * [TopTails CSS Validation Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Froeszler.github.io%2Ftoptails%2F&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en).
-    * Note: 20 warnings were however displayed when passing through the same [validator](https://jigsaw.w3.org/css-validator/).
+    * Note: 20 warnings were displayed when passing through the same [validator](https://jigsaw.w3.org/css-validator/).
       * These relate to including `-webkit-...` and `-moz-...` to ensure a variety of browsers to hide the up/down arrows styling on input fields, a desired functional feature of site.
       * Researching this topic revealed [interesting opinions](https://meiert.com/en/blog/css-validation-and-vendor-extensions/) surrounding the use of vendor extensions and their relationship to validation.
-      * I have decided to let these warnings remain, acknowledging that the end result is a much more consistent user experience across current popular browsers.
+      * It seems approriate to let these warnings remain, acknowledging the binary nature of validators and that the reamining code results in a much more consistent user experience across current popular browsers.
 
 * JavaScript
   
