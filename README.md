@@ -323,7 +323,7 @@ TopTails is designed to be a casual, relatively simple game of chance that is co
 
 Testing was performed on a mix of screen sizes currently seen in the global marketplace sourced from [GBK soft research](https://gbksoft.com/blog/common-screen-sizes-for-responsive-web-design/) between January 2020 to January 2021.
 
-Considering this the game area has been coded with a `max-width: 1024px;` on desktops size screens to emulate the same profile as lower resolution tablet widths (768×1024px). Responsivity has been coded to change the layout tablet width of 768px, allowing a 'code once approach' to change the layout for mobile devices below this width. Users at this screen size are able to simply change the orientation of their device to suit the layout.
+Considering this the game area has been coded with a `max-width: 1024px;` on desktops size screens to emulate the same profile as lower resolution tablet widths (768×1024px). Responsivity has been coded to change the layout tablet width of 768px, and 375px allowing the layout to chang for mobile devices that range from below this width. 
 
 The TopTails TwoUp site has been created using [GitPod](https://www.gitpod.io/) on a google chrome browser in conjunction with the chrome development environment. 
 
