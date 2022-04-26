@@ -84,8 +84,7 @@ button:hover {
     background-color: #00843D0D;
     box-sizing: border-box;
     width: 85%;
-    height: 75vh;
-    max-height: 480px;
+    height: 55vh;
     max-width: 1024px;
     padding: 1rem;
     margin: 0 auto;
@@ -324,7 +323,7 @@ footer > button:hover {
 }
 
 #lossPopup h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 #lossPopup i {
@@ -702,7 +701,7 @@ footer > button:hover {
         display: block;
         padding-left: 0;
         width: 100%;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .coinPopUp {
@@ -790,5 +789,13 @@ footer > button:hover {
 
     #testSection {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    
+    .bet-area button {
+        width: 100%;
+        border-radius: 0%;
     }
 }
