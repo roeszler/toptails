@@ -1,5 +1,4 @@
 // ------ Global Constants & Variables 
-
 /**
  * Declare constants for DOM Choices 
  * and possible choices
@@ -41,6 +40,7 @@ function incrementBet() {
    parseInt(betAfter);
    decrementBank(); 
 }
+
 /**
 * decreases the bet amount, min 1.
 */
@@ -64,6 +64,7 @@ function hhActive() {
     let userChoice = document.getElementById("userChoice").value = 1;
     console.log(userChoice);
 }
+
 /**
 * Turns off the color of the TwoHeads button on bet type selection 
 */
@@ -87,6 +88,7 @@ function htActive() {
     let userChoice = document.getElementById("userChoice").value = 2;
     console.log(userChoice);
 }
+
 /**
 * Turns off the color of the HeadTails button on bet type selection 
 */
@@ -110,6 +112,7 @@ function ttActive() {
     let userChoice = document.getElementById("userChoice").value = 3;
     console.log(userChoice);
 }
+
 /**
 * Turns off the color of the TailsTails button on bet type selection 
 */
@@ -518,7 +521,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /**
- * Listener for end animation sequence of coin spin
+ * Listener for end animation sequence of HH coin spin
  */
 hhCoinEnd.addEventListener("animationend", function() {
     let spinResult = document.getElementById("spinResult").value;
@@ -533,6 +536,9 @@ hhCoinEnd.addEventListener("animationend", function() {
     }
 });
 
+/**
+ * Listener for end animation sequence of HT coin spin
+ */
 htCoinEnd.addEventListener("animationend", function() {
     let spinResult = document.getElementById("spinResult").value;
     userChoice = document.getElementById("userChoice").value;
@@ -546,6 +552,9 @@ htCoinEnd.addEventListener("animationend", function() {
     }
 });
 
+/**
+ * Listener for end animation sequence of TT coin spin
+ */
 ttCoinEnd.addEventListener("animationend", function() {
     let spinResult = document.getElementById("spinResult").value;
     userChoice = document.getElementById("userChoice").value;
@@ -558,64 +567,3 @@ ttCoinEnd.addEventListener("animationend", function() {
         calculateWinLoss();
     }
 });
-
-// ------ Possible future functions 
-
-// ------ Event listener for mousedown of incrementBet() and decrementBet() functions
-
-// let timeout, interval;
-
-// [].forEach.call(document.querySelectorAll(".btn--add"), function(buttonAdd) {
-//   buttonAdd.addEventListener("mousedown", function() {
-//     let id = buttonAdd.dataset.target;
-//     incrementValue(id);
-    
-//     timeout = setTimeout(function() {
-//       interval = setInterval(function() {
-//         incrementValue(id);
-//       }, 50);    
-//     }, 300);
-//   });
-  
-//   buttonAdd.addEventListener("mouseup", clearTimers);
-//   buttonAdd.addEventListener("mouseleave", clearTimers); 
-  
-//   function clearTimers() {
-//     clearTimeout(timeout);
-//     clearInterval(interval);
-//   }
-// });
-
-// function incrementValue(betAmount) {
-//   let el = document.getElementById(betAmount);
-//   let value = parseInt(el.textContent, 10);
-//   document.getElementById(betAmount).textContent = ++value;
-// }
-
-
-// [].forEach.call(document.querySelectorAll(".btn--minus"), function(buttonMinus) {
-//   buttonMinus.addEventListener("mousedown", function() {
-//     let id = buttonMinus.dataset.target;
-//     decrementValue(id);
-    
-//     timeout = setTimeout(function() {
-//       interval = setInterval(function() {
-//         decrementValue(id);
-//       }, 50);    
-//     }, 300);
-//   });
-  
-//   buttonMinus.addEventListener("mouseup", clearTimers);
-//   buttonMinus.addEventListener("mouseleave", clearTimers); 
-  
-//   function clearTimers() {
-//     clearTimeout(timeout);
-//     clearInterval(interval);
-//   }
-// });
-
-// function decrementValue(betAmount) {
-//   let el = document.getElementById(betAmount);
-//   let value = parseInt(el.textContent, 10);
-//   document.getElementById(betAmount).textContent = --value;
-// }
