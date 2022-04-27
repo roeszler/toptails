@@ -41,7 +41,6 @@ Site link : https://roeszler.github.io/toptails/
     * [Content](#content)
     * [Media](#media)
 </details>
-<br>
 
 ## 1. Project Purpose
 
