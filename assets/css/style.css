@@ -228,7 +228,7 @@ input[type=number] {
 }
 
 #bank {
-    color: #00843D;
+    color: #006400;
 }
 
 /* ------ Footer */
@@ -786,7 +786,7 @@ footer > button:hover {
     }
 
     #bank {
-        color: #003300;
+        color: #006400;
     }
 
     footer {

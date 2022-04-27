@@ -118,6 +118,7 @@ Based on providing visual depth and variety of events to the game user, the foll
 | Inactive Gray | #3B3B3F | rgba(59,59,63, 0.2) |
 | Australian Green | #00843D | rgba(0,140,60, 1) |
 | Fade Australian Green | #00843D80 | rgba(0,140,60, 0.5) |
+| Dark Australian Green | #006400 | rgba(0,100,0, 1) |
 | Game Area Green | #00843D0D | rgba(0,140,60, 0.05) |
 | Australian Flag Blue | #00008B | rgba(0,0,139, 1) |
 | Yellow | #ff0 | rgba(255,255,0,1) |
