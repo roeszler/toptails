@@ -481,7 +481,8 @@ Each of these included research and implementation of:
   * The text for the site was imported via google fonts as [Montserrat](https://fonts.google.com/specimen/Montserrat) by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly.
   * Timing, loading and logging of the document object model (DOM) events - [Window: DOMContentLoaded_event](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) and [Document: DOMContentLoaded_event](https://stackoverflow.com/questions/588040/window-onload-vs-document-onload).
   * Adding a 'Pseudo Selector' to add content before an element, in this case the coin buttons - [CSS-Tricks.com](https://css-tricks.com/pseudo-class-selectors/).
-  * How to cache static resources using HTTP caching - [WebDev](https://web.dev/uses-long-cache-ttl/#how-to-cache-static-resources-using-http-caching)
+  * How to cache static resources using HTTP caching - [WebDev](https://web.dev/uses-long-cache-ttl/#how-to-cache-static-resources-using-http-caching).
+  * Research on managing errors via `windows.onerror` - [MDN Webdocs](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onerror).
 
 ### Media
 
