@@ -171,7 +171,6 @@ input[type=number] {
     min-width: 4em;
     margin: 1em 1em 2em;
     font-size: 1.5rem;
-    font-family: Arial;
     border-radius: 50%;
     content: attr(data-type);
 }
