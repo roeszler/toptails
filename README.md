@@ -3,7 +3,7 @@
 Site link : https://roeszler.github.io/toptails/
 
 <details>
-<summary style="font-size: 1.5rem;">Table of Contents (dropdown list)</summary>
+<summary style="font-size: 2rem;">Table of Contents (dropdown list)</summary>
 
 1. [Project Purpose](#1-project-purpose)
 2. [User Experience Design](#2-user-experience-design)
