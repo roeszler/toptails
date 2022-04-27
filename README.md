@@ -2,8 +2,8 @@
 ### HTML, CSS and JavaScript Essentials - Portfolio Project 2
 Site link : https://roeszler.github.io/toptails/
 
-
-## Table of Contents
+<details>
+<summary style="font-size: 1.5rem;">Table of Contents (dropdown list)</summary>
 
 1. [Project Purpose](#1-project-purpose)
 2. [User Experience Design](#2-user-experience-design)
@@ -40,6 +40,9 @@ Site link : https://roeszler.github.io/toptails/
 7. [Credits](#7-credits)
     * [Content](#content)
     * [Media](#media)
+</details>
+<br>
+
 ## 1. Project Purpose
 
 The TwoTails website was created as the second part of my project portfolio while styling the [Code Insitute's Full Stack Software Developer course](https://codeinstitute.net/se/full-stack-software-development-diploma/). It has been built from the ground up to extend myself, demonstrate the use of JavaScript (vanilla JavaScript), HTML and CSS employing User Centred Design and have some fun. The site is targeted to those looking to implement similar advanced JavaScript concepts, while also participating in a fun game of chance. 
